@@ -3,12 +3,17 @@ import 'package:flutter/material.dart';
 class FirstFlutter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('First Flutter'),
-      ),
-      body: Center(
-        child: Text('First Flutter'),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('My First Flutter'),
+        ),
+        body: Center(
+          child: Text(
+            'Hello World',
+          ),
+        ),
       ),
     );
   }
