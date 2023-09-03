@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutor/first_flutter.dart';
+import 'package:flutter_tutor/text_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -62,7 +63,7 @@ class MyHomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return FirstFlutter();
+                      return TextWidget();
                     }));
                   },
                   child: const Center(
