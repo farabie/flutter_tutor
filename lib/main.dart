@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutor/container_flutter.dart';
 import 'package:flutter_tutor/first_flutter.dart';
 import 'package:flutter_tutor/row_column.dart';
 import 'package:flutter_tutor/text_widget.dart';
@@ -119,7 +120,7 @@ class MyHomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return RowColumnTutor();
+                      return ContainerLatihan();
                     }));
                   },
                   child: const Center(
