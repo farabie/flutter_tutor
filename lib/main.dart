@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutor/animated_container.dart';
 import 'package:flutter_tutor/anonymous_flutter.dart';
 import 'package:flutter_tutor/container_flutter.dart';
 import 'package:flutter_tutor/first_flutter.dart';
@@ -264,7 +265,7 @@ class MyHomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return FirstFlutter();
+                      return AnimatedContainerFlut();
                     }));
                   },
                   child: const Center(
