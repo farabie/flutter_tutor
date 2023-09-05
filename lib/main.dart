@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutor/Textfield_widget_flut.dart';
 import 'package:flutter_tutor/animated_container.dart';
 import 'package:flutter_tutor/anonymous_flutter.dart';
 import 'package:flutter_tutor/appbar_gradasi.dart';
@@ -518,7 +519,7 @@ class MyHomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return ImageFlut();
+                      return TextFieldFlut();
                     }));
                   },
                   child: const Center(
