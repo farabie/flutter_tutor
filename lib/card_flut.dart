@@ -12,20 +12,34 @@ class CardFlut extends StatelessWidget {
           margin: EdgeInsets.all(10),
           child: ListView(
             children: <Widget>[
-              Card(
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.adb),
-                    Text(
-                      'Android Data',
-                    )
-                  ],
-                ),
-              )
+              buildCard(Icons.adb, 'Account Box'),
+              buildCard(Icons.get_app, 'Get App'),
+              buildCard(Icons.exit_to_app, 'Exit'),
+              buildCard(Icons.settings, 'Setting'),
+              buildCard(Icons.search, 'Searching'),
             ],
           ),
         ),
       ),
     );
   }
+}
+
+Card buildCard(IconData iconData, String text) {
+  return Card(
+    child: Container(
+      margin: EdgeInsets.all(10),
+      child: Row(
+        children: <Widget>[
+          Icon(iconData),
+          SizedBox(
+            width: 10,
+          ),
+          Text(
+            text,
+          )
+        ],
+      ),
+    ),
+  );
 }
