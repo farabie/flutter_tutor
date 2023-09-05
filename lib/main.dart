@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutor/animated_container.dart';
 import 'package:flutter_tutor/anonymous_flutter.dart';
+import 'package:flutter_tutor/appbar_gradasi.dart';
+import 'package:flutter_tutor/card_flut.dart';
 import 'package:flutter_tutor/container_flutter.dart';
 import 'package:flutter_tutor/dragable_flut.dart';
 import 'package:flutter_tutor/first_flutter.dart';
@@ -461,7 +463,7 @@ class MyHomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return ImageFlut();
+                      return AppBarGradasiFlut();
                     }));
                   },
                   child: const Center(
@@ -491,7 +493,7 @@ class MyHomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return StackFlut();
+                      return CardFlut();
                     }));
                   },
                   child: const Center(
