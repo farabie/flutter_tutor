@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutor/animated_container.dart';
 import 'package:flutter_tutor/anonymous_flutter.dart';
 import 'package:flutter_tutor/container_flutter.dart';
+import 'package:flutter_tutor/dragable_flut.dart';
 import 'package:flutter_tutor/first_flutter.dart';
 import 'package:flutter_tutor/flexible_widget.dart';
 import 'package:flutter_tutor/image_flut.dart';
@@ -404,7 +405,7 @@ class MyHomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return ImageFlut();
+                      return DragableFlut();
                     }));
                   },
                   child: const Center(
