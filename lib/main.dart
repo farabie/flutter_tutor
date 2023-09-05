@@ -7,6 +7,7 @@ import 'package:flutter_tutor/flexible_widget.dart';
 import 'package:flutter_tutor/image_flut.dart';
 import 'package:flutter_tutor/list_listview_flutter.dart';
 import 'package:flutter_tutor/row_column.dart';
+import 'package:flutter_tutor/spacer_flut.dart';
 import 'package:flutter_tutor/stack_flut.dart';
 import 'package:flutter_tutor/stateless_statfull_flutter.dart';
 import 'package:flutter_tutor/text_widget.dart';
@@ -378,7 +379,7 @@ class MyHomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return StackFlut();
+                      return SpacerFlut();
                     }));
                   },
                   child: const Center(
