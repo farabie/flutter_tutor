@@ -10,6 +10,7 @@ import 'package:flutter_tutor/first_flutter.dart';
 import 'package:flutter_tutor/flexible_widget.dart';
 import 'package:flutter_tutor/image_flut.dart';
 import 'package:flutter_tutor/list_listview_flutter.dart';
+import 'package:flutter_tutor/mediaquery_flut.dart';
 import 'package:flutter_tutor/navigation_multi.dart';
 import 'package:flutter_tutor/row_column.dart';
 import 'package:flutter_tutor/spacer_flut.dart';
@@ -575,7 +576,7 @@ class MyHomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return ImageFlut();
+                      return MediaQueryFlut();
                     }));
                   },
                   child: const Center(
