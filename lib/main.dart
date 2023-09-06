@@ -17,6 +17,7 @@ import 'package:flutter_tutor/stack_flut.dart';
 import 'package:flutter_tutor/stateless_statfull_flutter.dart';
 import 'package:flutter_tutor/text_widget.dart';
 import 'package:flutter_tutor/textstyle_flut.dart';
+import 'package:flutter_tutor/textwidgetdecord_flut.dart';
 
 void main() {
   runApp(MyApp());
@@ -549,7 +550,7 @@ class MyHomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return StackFlut();
+                      return TextWidgetDecFlut();
                     }));
                   },
                   child: const Center(
