@@ -9,6 +9,7 @@ import 'package:flutter_tutor/dragable_flut.dart';
 import 'package:flutter_tutor/first_flutter.dart';
 import 'package:flutter_tutor/flexible_widget.dart';
 import 'package:flutter_tutor/image_flut.dart';
+import 'package:flutter_tutor/inkwell_flut.dart';
 import 'package:flutter_tutor/list_listview_flutter.dart';
 import 'package:flutter_tutor/mediaquery_flut.dart';
 import 'package:flutter_tutor/navigation_multi.dart';
@@ -606,7 +607,7 @@ class MyHomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return StackFlut();
+                      return InkWellFlut();
                     }));
                   },
                   child: const Center(
