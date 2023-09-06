@@ -13,6 +13,7 @@ import 'package:flutter_tutor/inkwell_flut.dart';
 import 'package:flutter_tutor/list_listview_flutter.dart';
 import 'package:flutter_tutor/mediaquery_flut.dart';
 import 'package:flutter_tutor/navigation_multi.dart';
+import 'package:flutter_tutor/opacity_custom.dart';
 import 'package:flutter_tutor/row_column.dart';
 import 'package:flutter_tutor/spacer_flut.dart';
 import 'package:flutter_tutor/stack_flut.dart';
@@ -45,613 +46,171 @@ class MyHomePage extends StatelessWidget {
       body: ListView(
         scrollDirection: Axis.vertical,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return FirstFlutter();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '01. Aplikasi Flutter Pertamaku',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return TextWidget();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '02. Text Widget',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+          menuBelajar(
+            '01. Aplikasi Flutter Pertama',
+            '02. Text Widget',
+            FirstFlutter(),
+            TextWidgetFlut(),
+            context: context,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return RowColumnTutor();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '03. Row dan Column Widget',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return ContainerLatihan();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '04. Container Widget',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+          menuBelajar(
+            '03. Row dan Column ',
+            '04. Container',
+            RowColumnTutor(),
+            ContainerLatihan(),
+            context: context,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return StaelessFull();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '05. Stateless & Stateful Widget',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return AnonymousFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '06. Anonymous Method',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+          menuBelajar(
+            '05. Stateles & Stateful Widget ',
+            '06. Anonymous Method',
+            StaelessFull(),
+            AnonymousFlut(),
+            context: context,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return TextStyleFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '07. TextStyle',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return ListViewFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '08. List & ListView',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+          menuBelajar(
+            '07. TextStyle',
+            '08. List & ListView',
+            TextStyleFlut(),
+            ListViewFlut(),
+            context: context,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return AnimatedContainerFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '09. AnimatedContainer & Gesture Detector',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return FlexibleFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '10. Flexible Widget',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+          menuBelajar(
+            '09. AnimatedContainer & Gesture Detector',
+            '10. Flexible Widget',
+            AnimatedContainerFlut(),
+            FlexibleFlut(),
+            context: context,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return StackFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '11. Stack & Align Widget',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return ImageFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '12. Image Widget',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+          menuBelajar(
+            '11. Stack & Align Widget',
+            '12. Image Widget',
+            StackFlut(),
+            ImageFlut(),
+            context: context,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return SpacerFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '13. Spacer Widget',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return DragableFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '14. Draggable, DragTarget, SizedBox, Material',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+          menuBelajar(
+            '13. Spacer Widget',
+            '14. Draggable, DragTarget, SizedBox, Material',
+            SpacerFlut(),
+            DragableFlut(),
+            context: context,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return NavigationMultFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '15. Navigasi Multi Page',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return AppBarGradasiFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '16. AppBar Gradasi',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+          menuBelajar(
+            '15. Navigasi Multi Page',
+            '16. Appbar Gradasi',
+            NavigationMultFlut(),
+            AppBarGradasiFlut(),
+            context: context,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return CardFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '17. Card Widget',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return TextFieldFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '18. Textfield Widget',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+          menuBelajar(
+            '17. Card Widget',
+            '18. TextField Widget',
+            CardFlut(),
+            TextFieldFlut(),
+            context: context,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return TextWidgetDecFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '19.TextField(Decoration)',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return MediaQueryFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '20. MediaQuery',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+          menuBelajar(
+            '19. TextField(Decoration)',
+            '20. MediaQuery',
+            TextWidgetDecFlut(),
+            MediaQueryFlut(),
+            context: context,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return InkWellFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '21. Ink Well',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.blue,
-                width: 150,
-                height: 150,
-                margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return ImageFlut();
-                    }));
-                  },
-                  child: const Center(
-                    child: Text(
-                      '22. Opacity(Custom Card)',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+          menuBelajar(
+            '21. Ink Well',
+            '22. Opacity (Custom Card)',
+            InkWellFlut(),
+            OpacityCardCustom(),
+            context: context,
+          ),
+          menuBelajar(
+            '23. Positoned, FloatingActionButton',
+            '24. Hero & ClipRRect Widget',
+            InkWellFlut(),
+            OpacityCardCustom(),
+            context: context,
+          ),
+          menuBelajar(
+            '25. AppBar Custom Height',
+            '26. TabBar',
+            InkWellFlut(),
+            OpacityCardCustom(),
+            context: context,
+          ),
+          menuBelajar(
+            '27. Mengubah Tampilan TabBar',
+            '28. QR Code',
+            InkWellFlut(),
+            OpacityCardCustom(),
+            context: context,
+          ),
+          menuBelajar(
+            '29. Transform(Button Belah Ketupat)',
+            '30. Gradient Opacity(Transparansi Bergradasi)',
+            InkWellFlut(),
+            OpacityCardCustom(),
+            context: context,
           ),
         ],
       ),
     );
   }
+}
+
+Row menuBelajar(
+    String name, String name2, Widget menuBelajar, Widget menuBelajar2,
+    {BuildContext context}) {
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    children: [
+      Container(
+        color: Colors.blue,
+        width: 150,
+        height: 150,
+        margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
+        child: GestureDetector(
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return menuBelajar;
+            }));
+          },
+          child: Center(
+            child: Text(
+              name,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        ),
+      ),
+      Container(
+        color: Colors.blue,
+        width: 150,
+        height: 150,
+        margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
+        child: GestureDetector(
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return menuBelajar2;
+            }));
+          },
+          child: Center(
+            child: Text(
+              name2,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        ),
+      ),
+    ],
+  );
 }

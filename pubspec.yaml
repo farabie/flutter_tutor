@@ -65,6 +65,7 @@ flutter:
     - images/luffy.jpg
     - images/pattern.jpg
     - images/pattern1.png
+    - images/bg_sunset.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
