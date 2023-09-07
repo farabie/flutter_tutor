@@ -14,6 +14,7 @@ import 'package:flutter_tutor/list_listview_flutter.dart';
 import 'package:flutter_tutor/mediaquery_flut.dart';
 import 'package:flutter_tutor/navigation_multi.dart';
 import 'package:flutter_tutor/opacity_custom.dart';
+import 'package:flutter_tutor/postioned_floatingaction.dart';
 import 'package:flutter_tutor/row_column.dart';
 import 'package:flutter_tutor/spacer_flut.dart';
 import 'package:flutter_tutor/stack_flut.dart';
@@ -126,7 +127,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '23. Positoned, FloatingActionButton',
             '24. Hero & ClipRRect Widget',
-            InkWellFlut(),
+            PositionedFloatingFlut(),
             OpacityCardCustom(),
             context: context,
           ),
