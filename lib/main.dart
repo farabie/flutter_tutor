@@ -21,6 +21,7 @@ import 'package:flutter_tutor/opacity_custom.dart';
 import 'package:flutter_tutor/postioned_floatingaction.dart';
 import 'package:flutter_tutor/qrcode_flut.dart';
 import 'package:flutter_tutor/row_column.dart';
+import 'package:flutter_tutor/sound_play.dart';
 import 'package:flutter_tutor/spacer_flut.dart';
 import 'package:flutter_tutor/stack_flut.dart';
 import 'package:flutter_tutor/stateless_statfull_flutter.dart';
@@ -162,7 +163,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '31. Musik/Sound',
             '32. Read QR Code',
-            InkWellFlut(),
+            SoundPlayFlut(),
             OpacityCardCustom(),
             context: context,
           ),
