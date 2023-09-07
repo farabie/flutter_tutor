@@ -10,6 +10,7 @@ import 'package:flutter_tutor/customtabbar_flut.dart';
 import 'package:flutter_tutor/dragable_flut.dart';
 import 'package:flutter_tutor/first_flutter.dart';
 import 'package:flutter_tutor/flexible_widget.dart';
+import 'package:flutter_tutor/gradient_opacity.dart';
 import 'package:flutter_tutor/hero_cliprect.dart';
 import 'package:flutter_tutor/image_flut.dart';
 import 'package:flutter_tutor/inkwell_flut.dart';
@@ -155,40 +156,40 @@ class MyHomePage extends StatelessWidget {
             '29. Transform(Button Belah Ketupat)',
             '30. Gradient Opacity(Transparansi Bergradasi)',
             TransformFlut(),
-            OpacityCardCustom(),
+            GradientOpacityFlut(),
             context: context,
           ),
           menuBelajar(
-            '31. Gradient Opacity',
-            '32. Musik/Sound',
+            '31. Musik/Sound',
+            '32. Read QR Code',
             InkWellFlut(),
             OpacityCardCustom(),
             context: context,
           ),
           menuBelajar(
-            '33. Read QR Code',
-            '34. Font Features',
+            '33. Font Features',
+            '34. ClipPath',
             InkWellFlut(),
             OpacityCardCustom(),
             context: context,
           ),
           menuBelajar(
-            '35. ClipPath',
-            '36. Post Method(Http Request)',
+            '35. Post Method(Http Request)',
+            '36. Get Method(Http Request)',
             InkWellFlut(),
             OpacityCardCustom(),
             context: context,
           ),
           menuBelajar(
-            '37. Get Method(Http Request)',
-            '38. Kumpulan Data(Http Request)',
+            '37. Kumpulan Data(Http Request)',
+            '38. Switch & AnimatedSwitcher',
             InkWellFlut(),
             OpacityCardCustom(),
             context: context,
           ),
           menuBelajar(
-            '39. Switch & AnimatedSwitcher',
-            '40. Animated Padding',
+            '39. Animated Padding',
+            '40. Shared Preferences & Double Mark Operator',
             InkWellFlut(),
             OpacityCardCustom(),
             context: context,
