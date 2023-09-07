@@ -8,6 +8,7 @@ import 'package:flutter_tutor/container_flutter.dart';
 import 'package:flutter_tutor/dragable_flut.dart';
 import 'package:flutter_tutor/first_flutter.dart';
 import 'package:flutter_tutor/flexible_widget.dart';
+import 'package:flutter_tutor/hero_cliprect.dart';
 import 'package:flutter_tutor/image_flut.dart';
 import 'package:flutter_tutor/inkwell_flut.dart';
 import 'package:flutter_tutor/list_listview_flutter.dart';
@@ -128,7 +129,7 @@ class MyHomePage extends StatelessWidget {
             '23. Positoned, FloatingActionButton',
             '24. Hero & ClipRRect Widget',
             PositionedFloatingFlut(),
-            OpacityCardCustom(),
+            HeroClipFlut(),
             context: context,
           ),
           menuBelajar(
