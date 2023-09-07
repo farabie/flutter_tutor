@@ -21,6 +21,7 @@ import 'package:flutter_tutor/row_column.dart';
 import 'package:flutter_tutor/spacer_flut.dart';
 import 'package:flutter_tutor/stack_flut.dart';
 import 'package:flutter_tutor/stateless_statfull_flutter.dart';
+import 'package:flutter_tutor/tabbar_flut.dart';
 import 'package:flutter_tutor/text_widget.dart';
 import 'package:flutter_tutor/textstyle_flut.dart';
 import 'package:flutter_tutor/textwidgetdecord_flut.dart';
@@ -137,7 +138,7 @@ class MyHomePage extends StatelessWidget {
             '25. AppBar Custom Height',
             '26. TabBar',
             AppBarCustomHeight(),
-            OpacityCardCustom(),
+            TabBarFlut(),
             context: context,
           ),
           menuBelajar(
