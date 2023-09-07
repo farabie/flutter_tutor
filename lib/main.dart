@@ -6,6 +6,7 @@ import 'package:flutter_tutor/appbar_gradasi.dart';
 import 'package:flutter_tutor/appbarcusheight_flut.dart';
 import 'package:flutter_tutor/card_flut.dart';
 import 'package:flutter_tutor/container_flutter.dart';
+import 'package:flutter_tutor/customtabbar_flut.dart';
 import 'package:flutter_tutor/dragable_flut.dart';
 import 'package:flutter_tutor/first_flutter.dart';
 import 'package:flutter_tutor/flexible_widget.dart';
@@ -144,7 +145,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '27. Mengubah Tampilan TabBar',
             '28. QR Code',
-            InkWellFlut(),
+            CustomTabBarFlut(),
             OpacityCardCustom(),
             context: context,
           ),
