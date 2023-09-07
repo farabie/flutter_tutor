@@ -18,6 +18,7 @@ import 'package:flutter_tutor/mediaquery_flut.dart';
 import 'package:flutter_tutor/navigation_multi.dart';
 import 'package:flutter_tutor/opacity_custom.dart';
 import 'package:flutter_tutor/postioned_floatingaction.dart';
+import 'package:flutter_tutor/qrcode_flut.dart';
 import 'package:flutter_tutor/row_column.dart';
 import 'package:flutter_tutor/spacer_flut.dart';
 import 'package:flutter_tutor/stack_flut.dart';
@@ -26,6 +27,7 @@ import 'package:flutter_tutor/tabbar_flut.dart';
 import 'package:flutter_tutor/text_widget.dart';
 import 'package:flutter_tutor/textstyle_flut.dart';
 import 'package:flutter_tutor/textwidgetdecord_flut.dart';
+import 'package:flutter_tutor/transorm_belahketupat.dart';
 
 void main() {
   runApp(MyApp());
@@ -146,12 +148,47 @@ class MyHomePage extends StatelessWidget {
             '27. Mengubah Tampilan TabBar',
             '28. QR Code',
             CustomTabBarFlut(),
-            OpacityCardCustom(),
+            QrCodeFlut(),
             context: context,
           ),
           menuBelajar(
             '29. Transform(Button Belah Ketupat)',
             '30. Gradient Opacity(Transparansi Bergradasi)',
+            TransformFlut(),
+            OpacityCardCustom(),
+            context: context,
+          ),
+          menuBelajar(
+            '31. Gradient Opacity',
+            '32. Musik/Sound',
+            InkWellFlut(),
+            OpacityCardCustom(),
+            context: context,
+          ),
+          menuBelajar(
+            '33. Read QR Code',
+            '34. Font Features',
+            InkWellFlut(),
+            OpacityCardCustom(),
+            context: context,
+          ),
+          menuBelajar(
+            '35. ClipPath',
+            '36. Post Method(Http Request)',
+            InkWellFlut(),
+            OpacityCardCustom(),
+            context: context,
+          ),
+          menuBelajar(
+            '37. Get Method(Http Request)',
+            '38. Kumpulan Data(Http Request)',
+            InkWellFlut(),
+            OpacityCardCustom(),
+            context: context,
+          ),
+          menuBelajar(
+            '39. Switch & AnimatedSwitcher',
+            '40. Animated Padding',
             InkWellFlut(),
             OpacityCardCustom(),
             context: context,
