@@ -5,6 +5,7 @@ import 'package:flutter_tutor/anonymous_flutter.dart';
 import 'package:flutter_tutor/appbar_gradasi.dart';
 import 'package:flutter_tutor/appbarcusheight_flut.dart';
 import 'package:flutter_tutor/card_flut.dart';
+import 'package:flutter_tutor/clip_pathflut.dart';
 import 'package:flutter_tutor/container_flutter.dart';
 import 'package:flutter_tutor/customtabbar_flut.dart';
 import 'package:flutter_tutor/dragable_flut.dart';
@@ -19,6 +20,7 @@ import 'package:flutter_tutor/list_listview_flutter.dart';
 import 'package:flutter_tutor/mediaquery_flut.dart';
 import 'package:flutter_tutor/navigation_multi.dart';
 import 'package:flutter_tutor/opacity_custom.dart';
+import 'package:flutter_tutor/posthttp_flut.dart';
 import 'package:flutter_tutor/postioned_floatingaction.dart';
 import 'package:flutter_tutor/qrcode_flut.dart';
 import 'package:flutter_tutor/readqr_code_flut.dart';
@@ -173,13 +175,13 @@ class MyHomePage extends StatelessWidget {
             '33. Font Features',
             '34. ClipPath',
             FontFeaturesFlut(),
-            OpacityCardCustom(),
+            ClipPathFlut(),
             context: context,
           ),
           menuBelajar(
             '35. Post Method(Http Request)',
             '36. Get Method(Http Request)',
-            InkWellFlut(),
+            PostHttpFlut(),
             OpacityCardCustom(),
             context: context,
           ),
