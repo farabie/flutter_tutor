@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
 
 ///Karena susah cari mp3 nya jadi dilewati
 
@@ -11,35 +10,39 @@ class SoundPlayFlut extends StatefulWidget {
 }
 
 class _SoundPlayFlutState extends State<SoundPlayFlut> {
-  AudioPlayer audioPlayer;
-  String durasi = "00:00:00";
+  // AudioPlayer audioPlayer;
+  // String durasi = "00:00:00";
 
-  _SoundPlayFlutState() {
-    audioPlayer = AudioPlayer();
-    audioPlayer.onPlayerStateChanged.listen((duration) {
-      setState(() {
-        durasi = duration.toString();
-      });
-    });
-    //Untuk memainkan musik secara berulang jika musik telah selesai dijalankan
-    audioPlayer.setReleaseMode(ReleaseMode.LOOP);
-  }
+  // _SoundPlayFlutState() {
+  //   audioPlayer = AudioPlayer();
+  //   audioPlayer.onPlayerStateChanged.listen((duration) {
+  //     setState(() {
+  //       durasi = duration.toString();
+  //     });
+  //   });
+  //   //Untuk memainkan musik secara berulang jika musik telah selesai dijalankan
+  //   audioPlayer.setReleaseMode(ReleaseMode.loop);
+  // }
 
-  void playSound(String url) async {
-    await audioPlayer.play(url);
-  }
+  // void playSound(String url) async {
+  //   await audioPlayer.play(url);
+  // }
 
-  void pauseSound() async {
-    await audioPlayer.pause();
-  }
+  // void pauseSound() async {
+  //   await audioPlayer.pause();
+  // }
 
-  void stopSound() async {
-    await audioPlayer.stop();
-  }
+  // void stopSound() async {
+  //   await audioPlayer.stop();
+  // }
 
-  void resumeSound() {
-    audioPlayer.resume();
-  }
+  // void resumeSound() {
+  //   audioPlayer.resume();
+  // }
+
+  // void localSound(String LocalPath) async {
+  //   await audioPlayer.play(LocalPath, isLocal: true);
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -56,37 +59,33 @@ class _SoundPlayFlutState extends State<SoundPlayFlut> {
                 onPressed: () {
                   // playSound(
                   //     'http://ia802609.us.archive.org/13/items/quraninindonesia/001AlFaatihah.mp3');
+                  // localSound(
+                  //     'http://ia802609.us.archive.org/13/items/quraninindonesia/001AlFaatihah.mp3');
                 },
                 child: Text(
                   'Play',
                 ),
               ),
               ElevatedButton(
-                onPressed: () {
-                  pauseSound();
-                },
+                onPressed: () {},
                 child: Text(
                   'Pause',
                 ),
               ),
               ElevatedButton(
-                onPressed: () {
-                  stopSound();
-                },
+                onPressed: () {},
                 child: Text(
                   'Stop',
                 ),
               ),
               ElevatedButton(
-                onPressed: () {
-                  resumeSound();
-                },
+                onPressed: () {},
                 child: Text(
                   'Resume',
                 ),
               ),
               Text(
-                durasi,
+                'Kosong',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w500,

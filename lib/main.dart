@@ -10,6 +10,7 @@ import 'package:flutter_tutor/customtabbar_flut.dart';
 import 'package:flutter_tutor/dragable_flut.dart';
 import 'package:flutter_tutor/first_flutter.dart';
 import 'package:flutter_tutor/flexible_widget.dart';
+import 'package:flutter_tutor/font_features.dart';
 import 'package:flutter_tutor/gradient_opacity.dart';
 import 'package:flutter_tutor/hero_cliprect.dart';
 import 'package:flutter_tutor/image_flut.dart';
@@ -20,6 +21,7 @@ import 'package:flutter_tutor/navigation_multi.dart';
 import 'package:flutter_tutor/opacity_custom.dart';
 import 'package:flutter_tutor/postioned_floatingaction.dart';
 import 'package:flutter_tutor/qrcode_flut.dart';
+import 'package:flutter_tutor/readqr_code_flut.dart';
 import 'package:flutter_tutor/row_column.dart';
 import 'package:flutter_tutor/sound_play.dart';
 import 'package:flutter_tutor/spacer_flut.dart';
@@ -164,13 +166,13 @@ class MyHomePage extends StatelessWidget {
             '31. Musik/Sound',
             '32. Read QR Code',
             SoundPlayFlut(),
-            OpacityCardCustom(),
+            ReadQrCodeFLut(),
             context: context,
           ),
           menuBelajar(
             '33. Font Features',
             '34. ClipPath',
-            InkWellFlut(),
+            FontFeaturesFlut(),
             OpacityCardCustom(),
             context: context,
           ),
