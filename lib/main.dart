@@ -12,6 +12,7 @@ import 'package:flutter_tutor/dragable_flut.dart';
 import 'package:flutter_tutor/first_flutter.dart';
 import 'package:flutter_tutor/flexible_widget.dart';
 import 'package:flutter_tutor/font_features.dart';
+import 'package:flutter_tutor/getapimethod_flut.dart';
 import 'package:flutter_tutor/gradient_opacity.dart';
 import 'package:flutter_tutor/hero_cliprect.dart';
 import 'package:flutter_tutor/image_flut.dart';
@@ -182,7 +183,7 @@ class MyHomePage extends StatelessWidget {
             '35. Post Method(Http Request)',
             '36. Get Method(Http Request)',
             PostHttpFlut(),
-            OpacityCardCustom(),
+            GetHttpFlut(),
             context: context,
           ),
           menuBelajar(
