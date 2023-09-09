@@ -13,6 +13,7 @@ import 'package:flutter_tutor/first_flutter.dart';
 import 'package:flutter_tutor/flexible_widget.dart';
 import 'package:flutter_tutor/font_features.dart';
 import 'package:flutter_tutor/getapimethod_flut.dart';
+import 'package:flutter_tutor/getlistapi_flut.dart';
 import 'package:flutter_tutor/gradient_opacity.dart';
 import 'package:flutter_tutor/hero_cliprect.dart';
 import 'package:flutter_tutor/image_flut.dart';
@@ -189,7 +190,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '37. Kumpulan Data(Http Request)',
             '38. Switch & AnimatedSwitcher',
-            InkWellFlut(),
+            GetListApiFlut(),
             OpacityCardCustom(),
             context: context,
           ),
