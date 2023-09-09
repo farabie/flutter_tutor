@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutor/Textfield_widget_flut.dart';
 import 'package:flutter_tutor/animated_container.dart';
+import 'package:flutter_tutor/animated_paddingflut.dart';
 import 'package:flutter_tutor/anonymous_flutter.dart';
 import 'package:flutter_tutor/appbar_gradasi.dart';
 import 'package:flutter_tutor/appbarcusheight_flut.dart';
@@ -31,6 +32,7 @@ import 'package:flutter_tutor/sound_play.dart';
 import 'package:flutter_tutor/spacer_flut.dart';
 import 'package:flutter_tutor/stack_flut.dart';
 import 'package:flutter_tutor/stateless_statfull_flutter.dart';
+import 'package:flutter_tutor/switch_animatedswitcherflut.dart';
 import 'package:flutter_tutor/tabbar_flut.dart';
 import 'package:flutter_tutor/text_widget.dart';
 import 'package:flutter_tutor/textstyle_flut.dart';
@@ -191,13 +193,13 @@ class MyHomePage extends StatelessWidget {
             '37. Kumpulan Data(Http Request)',
             '38. Switch & AnimatedSwitcher',
             GetListApiFlut(),
-            OpacityCardCustom(),
+            SwitchFlut(),
             context: context,
           ),
           menuBelajar(
             '39. Animated Padding',
             '40. Shared Preferences & Double Mark Operator',
-            InkWellFlut(),
+            AnimatedPaddingFlut(),
             OpacityCardCustom(),
             context: context,
           ),
