@@ -25,6 +25,7 @@ import 'package:flutter_tutor/navigation_multi.dart';
 import 'package:flutter_tutor/opacity_custom.dart';
 import 'package:flutter_tutor/posthttp_flut.dart';
 import 'package:flutter_tutor/postioned_floatingaction.dart';
+import 'package:flutter_tutor/providersmultiflut.dart';
 import 'package:flutter_tutor/providsingleflut.dart';
 import 'package:flutter_tutor/qrcode_flut.dart';
 import 'package:flutter_tutor/readqr_code_flut.dart';
@@ -209,7 +210,7 @@ class MyHomePage extends StatelessWidget {
             '41. Provider State Management',
             '42. Provider State Management (Multi Provider)',
             ProviderSingleFlut(),
-            SharedPreferencesDmFLut(),
+            ProviderMultiFLut(),
             context: context,
           ),
           menuBelajar(
