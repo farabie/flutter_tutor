@@ -28,6 +28,7 @@ import 'package:flutter_tutor/postioned_floatingaction.dart';
 import 'package:flutter_tutor/qrcode_flut.dart';
 import 'package:flutter_tutor/readqr_code_flut.dart';
 import 'package:flutter_tutor/row_column.dart';
+import 'package:flutter_tutor/sharedprefrence_dmflut.dart';
 import 'package:flutter_tutor/sound_play.dart';
 import 'package:flutter_tutor/spacer_flut.dart';
 import 'package:flutter_tutor/stack_flut.dart';
@@ -200,7 +201,7 @@ class MyHomePage extends StatelessWidget {
             '39. Animated Padding',
             '40. Shared Preferences & Double Mark Operator',
             AnimatedPaddingFlut(),
-            OpacityCardCustom(),
+            SharedPreferencesDmFLut(),
             context: context,
           ),
         ],
