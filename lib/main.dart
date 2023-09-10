@@ -25,6 +25,7 @@ import 'package:flutter_tutor/navigation_multi.dart';
 import 'package:flutter_tutor/opacity_custom.dart';
 import 'package:flutter_tutor/posthttp_flut.dart';
 import 'package:flutter_tutor/postioned_floatingaction.dart';
+import 'package:flutter_tutor/providsingleflut.dart';
 import 'package:flutter_tutor/qrcode_flut.dart';
 import 'package:flutter_tutor/readqr_code_flut.dart';
 import 'package:flutter_tutor/row_column.dart';
@@ -200,6 +201,41 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '39. Animated Padding',
             '40. Shared Preferences & Double Mark Operator',
+            AnimatedPaddingFlut(),
+            SharedPreferencesDmFLut(),
+            context: context,
+          ),
+          menuBelajar(
+            '41. Provider State Management',
+            '42. Provider State Management (Multi Provider)',
+            ProviderSingleFlut(),
+            SharedPreferencesDmFLut(),
+            context: context,
+          ),
+          menuBelajar(
+            '43. Bloc State Management(Stream Controller & Stream Builder)',
+            '44. Bloc State Management(Flutter_Bloc)',
+            AnimatedPaddingFlut(),
+            SharedPreferencesDmFLut(),
+            context: context,
+          ),
+          menuBelajar(
+            '45. Doc Comment',
+            '46. Timer',
+            AnimatedPaddingFlut(),
+            SharedPreferencesDmFLut(),
+            context: context,
+          ),
+          menuBelajar(
+            '47. Custom Progress Bar(Timer + Provider)',
+            '48. Product Card(BoxShadow, RoundedRectangleBorder)',
+            AnimatedPaddingFlut(),
+            SharedPreferencesDmFLut(),
+            context: context,
+          ),
+          menuBelajar(
+            '49. Selectable Text, ToggleButtons, CollorFiltered(Flutter 1.9)',
+            '50. Hydrated Bloc State Management',
             AnimatedPaddingFlut(),
             SharedPreferencesDmFLut(),
             context: context,

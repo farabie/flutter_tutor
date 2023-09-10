@@ -16,6 +16,7 @@ class _SharedPreferencesDmFLutState extends State<SharedPreferencesDmFLut> {
   void saveData() async {
     //Deklarasi untuk sharedpreference atau mengambil instance nya dulu
     SharedPreferences pref = await SharedPreferences.getInstance();
+    //Jangan lupa untuk textediting controller itu .text bukan .toString()
     pref.setString("name", controller.text);
     pref.setBool("ison", isON);
   }
