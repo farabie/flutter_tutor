@@ -5,6 +5,7 @@ import 'package:flutter_tutor/animated_paddingflut.dart';
 import 'package:flutter_tutor/anonymous_flutter.dart';
 import 'package:flutter_tutor/appbar_gradasi.dart';
 import 'package:flutter_tutor/appbarcusheight_flut.dart';
+import 'package:flutter_tutor/blcostreamflut.dart';
 import 'package:flutter_tutor/card_flut.dart';
 import 'package:flutter_tutor/clip_pathflut.dart';
 import 'package:flutter_tutor/container_flutter.dart';
@@ -216,7 +217,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '43. Bloc State Management(Stream Controller & Stream Builder)',
             '44. Bloc State Management(Flutter_Bloc)',
-            AnimatedPaddingFlut(),
+            BlocStreamFlut(),
             SharedPreferencesDmFLut(),
             context: context,
           ),
