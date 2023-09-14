@@ -11,6 +11,7 @@ import 'package:flutter_tutor/card_flut.dart';
 import 'package:flutter_tutor/clip_pathflut.dart';
 import 'package:flutter_tutor/container_flutter.dart';
 import 'package:flutter_tutor/customtabbar_flut.dart';
+import 'package:flutter_tutor/doc_flut.dart';
 import 'package:flutter_tutor/dragable_flut.dart';
 import 'package:flutter_tutor/first_flutter.dart';
 import 'package:flutter_tutor/flexible_widget.dart';
@@ -225,7 +226,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '45. Doc Comment',
             '46. Timer',
-            AnimatedPaddingFlut(),
+            DocFlut(),
             SharedPreferencesDmFLut(),
             context: context,
           ),
