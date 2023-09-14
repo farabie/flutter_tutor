@@ -10,6 +10,7 @@ import 'package:flutter_tutor/bloc_library_flut.dart';
 import 'package:flutter_tutor/card_flut.dart';
 import 'package:flutter_tutor/clip_pathflut.dart';
 import 'package:flutter_tutor/container_flutter.dart';
+import 'package:flutter_tutor/custom_progress.dart';
 import 'package:flutter_tutor/customtabbar_flut.dart';
 import 'package:flutter_tutor/doc_flut.dart';
 import 'package:flutter_tutor/dragable_flut.dart';
@@ -234,7 +235,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '47. Custom Progress Bar(Timer + Provider)',
             '48. Product Card(BoxShadow, RoundedRectangleBorder)',
-            AnimatedPaddingFlut(),
+            CustomProgress(),
             SharedPreferencesDmFLut(),
             context: context,
           ),

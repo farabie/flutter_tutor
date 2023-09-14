@@ -3,8 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_tutor/utils/color_library_bloc.dart';
 
 class BlocLibraryFLut extends StatelessWidget {
-  const BlocLibraryFLut({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
