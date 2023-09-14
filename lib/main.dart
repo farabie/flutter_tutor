@@ -43,6 +43,7 @@ import 'package:flutter_tutor/tabbar_flut.dart';
 import 'package:flutter_tutor/text_widget.dart';
 import 'package:flutter_tutor/textstyle_flut.dart';
 import 'package:flutter_tutor/textwidgetdecord_flut.dart';
+import 'package:flutter_tutor/timerflut.dart';
 import 'package:flutter_tutor/transorm_belahketupat.dart';
 
 void main() {
@@ -227,7 +228,7 @@ class MyHomePage extends StatelessWidget {
             '45. Doc Comment',
             '46. Timer',
             DocFlut(),
-            SharedPreferencesDmFLut(),
+            TimerFlut(),
             context: context,
           ),
           menuBelajar(
