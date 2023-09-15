@@ -35,6 +35,7 @@ import 'package:flutter_tutor/providsingleflut.dart';
 import 'package:flutter_tutor/qrcode_flut.dart';
 import 'package:flutter_tutor/readqr_code_flut.dart';
 import 'package:flutter_tutor/row_column.dart';
+import 'package:flutter_tutor/select_toogle_flut.dart';
 import 'package:flutter_tutor/sharedprefrence_dmflut.dart';
 import 'package:flutter_tutor/sound_play.dart';
 import 'package:flutter_tutor/spacer_flut.dart';
@@ -243,7 +244,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '49. Selectable Text, ToggleButtons, CollorFiltered(Flutter 1.9)',
             '50. Hydrated Bloc State Management',
-            AnimatedPaddingFlut(),
+            SelectToogleColorFiltered(),
             SharedPreferencesDmFLut(),
             context: context,
           ),
