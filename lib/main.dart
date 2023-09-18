@@ -28,6 +28,7 @@ import 'package:flutter_tutor/ui/page/inkwell_flut.dart';
 import 'package:flutter_tutor/ui/page/list_listview_flutter.dart';
 import 'package:flutter_tutor/ui/page/listview_builderflut.dart';
 import 'package:flutter_tutor/ui/page/mediaquery_flut.dart';
+import 'package:flutter_tutor/ui/page/mvvm_flut.dart';
 import 'package:flutter_tutor/ui/page/navigation_multi.dart';
 import 'package:flutter_tutor/ui/page/opacity_custom.dart';
 import 'package:flutter_tutor/ui/page/posthttp_flut.dart';
@@ -254,7 +255,7 @@ class MyHomePage extends StatelessWidget {
             '51. ListView Builder + BLoc',
             '52. MVVM Architecture',
             ListViewBuilderFlut(),
-            HydratedBlocFlut(),
+            MvvmFlut(),
             context: context,
           ),
           menuBelajar(
