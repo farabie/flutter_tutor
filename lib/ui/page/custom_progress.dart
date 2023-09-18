@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutor/widget/progress_custom.dart';
+import 'package:flutter_tutor/ui/widget/progress_custom.dart';
 import 'package:provider/provider.dart';
 import 'dart:async';
 

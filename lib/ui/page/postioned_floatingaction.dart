@@ -188,6 +188,7 @@ class LoginPage extends StatelessWidget {
                         ),
                       ),
                       FloatingActionButton(
+                        heroTag: "facebook",
                         mini: true,
                         onPressed: () {},
                         elevation: 0,
@@ -198,6 +199,7 @@ class LoginPage extends StatelessWidget {
                         ),
                       ),
                       FloatingActionButton(
+                        heroTag: "twitter",
                         mini: true,
                         onPressed: () {},
                         elevation: 0,

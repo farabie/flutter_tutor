@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widget/product_card.dart';
+import 'package:flutter_tutor/ui/widget/product_card.dart';
 import 'package:provider/provider.dart';
 
 class CustomProductCard extends StatelessWidget {

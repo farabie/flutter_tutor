@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutor/utils/get_result.model.dart';
+import 'package:flutter_tutor/model/get_result.model.dart';
 
 class GetHttpFlut extends StatefulWidget {
   const GetHttpFlut({Key key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutor/utils/cart.dart';
-import 'package:flutter_tutor/utils/money.dart';
+import 'package:flutter_tutor/model/cart.dart';
+import 'package:flutter_tutor/model/money.dart';
 import 'package:provider/provider.dart';
 
 class ProviderMultiFLut extends StatelessWidget {

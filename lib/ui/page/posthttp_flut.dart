@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutor/utils/post_result_model.dart';
+import 'package:flutter_tutor/model/post_result_model.dart';
 
 class PostHttpFlut extends StatefulWidget {
   const PostHttpFlut({Key key}) : super(key: key);

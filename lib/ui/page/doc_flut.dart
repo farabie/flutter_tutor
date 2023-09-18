@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutor/utils/user_profile.dart';
+import 'package:flutter_tutor/model/user_profile.dart';
 
 class DocFlut extends StatelessWidget {
   final UserProfile profile = UserProfile(

@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_tutor/utils/color_library_bloc.dart';
+import 'package:flutter_tutor/model/color_library_bloc.dart';
 
-class BlocLibraryFLut extends StatelessWidget {
+///Skip HydratedBloc Karena Tidak Terlalu Paham dan Terlalu Rumit
+class HydratedBlocFlut extends StatelessWidget {
+  const HydratedBlocFlut({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: BlocProvider<ColorLibraryBloc>(
         create: (context) => ColorLibraryBloc(),
         child: HomePage(),

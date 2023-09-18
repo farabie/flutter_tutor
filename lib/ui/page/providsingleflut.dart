@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutor/widget/aplication_color.dart';
+import 'package:flutter_tutor/ui/widget/aplication_color.dart';
 import 'package:provider/provider.dart';
 
 class ProviderSingleFlut extends StatelessWidget {

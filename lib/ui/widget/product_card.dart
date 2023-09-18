@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutor/widget/progress_custom.dart';
+import 'package:flutter_tutor/ui/widget/progress_custom.dart';
 
 const Color firstColor = Color(0xffF44336);
 const Color secondColor = Color(0xff4CAF450);
