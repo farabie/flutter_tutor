@@ -22,6 +22,7 @@ import 'package:flutter_tutor/getapimethod_flut.dart';
 import 'package:flutter_tutor/getlistapi_flut.dart';
 import 'package:flutter_tutor/gradient_opacity.dart';
 import 'package:flutter_tutor/hero_cliprect.dart';
+import 'package:flutter_tutor/hydrated_blocflut.dart';
 import 'package:flutter_tutor/image_flut.dart';
 import 'package:flutter_tutor/inkwell_flut.dart';
 import 'package:flutter_tutor/list_listview_flutter.dart';
@@ -48,8 +49,12 @@ import 'package:flutter_tutor/textstyle_flut.dart';
 import 'package:flutter_tutor/textwidgetdecord_flut.dart';
 import 'package:flutter_tutor/timerflut.dart';
 import 'package:flutter_tutor/transorm_belahketupat.dart';
+import 'package:bloc/bloc.dart';
+import 'package:hydrated_bloc/hydrated_bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_tutor/utils/color_library_bloc.dart';
 
-void main() {
+void main() async {
   runApp(MyApp());
 }
 
@@ -245,7 +250,42 @@ class MyHomePage extends StatelessWidget {
             '49. Selectable Text, ToggleButtons, CollorFiltered(Flutter 1.9)',
             '50. Hydrated Bloc State Management',
             SelectToogleColorFiltered(),
-            SharedPreferencesDmFLut(),
+            HydratedBlocFlut(),
+            context: context,
+          ),
+          menuBelajar(
+            '51. ListView Builder + BLoc',
+            '52. MVVM Architecture',
+            SelectToogleColorFiltered(),
+            HydratedBlocFlut(),
+            context: context,
+          ),
+          menuBelajar(
+            '53. Multi Bloc In MultiPage App',
+            '54. How to Make Dart Snippet',
+            SelectToogleColorFiltered(),
+            HydratedBlocFlut(),
+            context: context,
+          ),
+          menuBelajar(
+            '55. Drop Down Button',
+            '56. Hive-Database in Pure Dart',
+            SelectToogleColorFiltered(),
+            HydratedBlocFlut(),
+            context: context,
+          ),
+          menuBelajar(
+            '57. Infinite (Auto Loading) List With Bloc',
+            '58. Flutter Bloc Ver 1.0 & Bloc Visiual',
+            SelectToogleColorFiltered(),
+            HydratedBlocFlut(),
+            context: context,
+          ),
+          menuBelajar(
+            '59. Extension',
+            '60. MOBX State Management',
+            SelectToogleColorFiltered(),
+            HydratedBlocFlut(),
             context: context,
           ),
         ],
