@@ -28,6 +28,7 @@ import 'package:flutter_tutor/ui/page/inkwell_flut.dart';
 import 'package:flutter_tutor/ui/page/list_listview_flutter.dart';
 import 'package:flutter_tutor/ui/page/listview_builderflut.dart';
 import 'package:flutter_tutor/ui/page/mediaquery_flut.dart';
+import 'package:flutter_tutor/ui/page/multibloc_multipage/multiblo_multipageflut.dart';
 import 'package:flutter_tutor/ui/page/mvvm_flut.dart';
 import 'package:flutter_tutor/ui/page/navigation_multi.dart';
 import 'package:flutter_tutor/ui/page/opacity_custom.dart';
@@ -261,7 +262,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '53. Multi Bloc In MultiPage App',
             '54. How to Make Dart Snippet',
-            SelectToogleColorFiltered(),
+            MultiBlocMultiPageFlut(),
             HydratedBlocFlut(),
             context: context,
           ),

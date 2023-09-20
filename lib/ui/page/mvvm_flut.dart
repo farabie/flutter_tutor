@@ -28,7 +28,7 @@ class MainPage extends StatelessWidget {
     UserBloc bloc = BlocProvider.of<UserBloc>(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text('MVVM Arsitektur'),
+        title: Text('MVVM Demo Arsitektur'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -40,7 +40,10 @@ class MainPage extends StatelessWidget {
             onPressed: () {
               bloc.add(r.nextInt(10) + 1);
             },
-            child: Text('Pick Random User'),
+            child: Text(
+              'Pick Random User',
+              style: TextStyle(color: Colors.white),
+            ),
           ),
           BlocBuilder<UserBloc, User>(
             builder: (context, user) =>
