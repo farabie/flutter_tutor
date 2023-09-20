@@ -13,6 +13,7 @@ import 'package:flutter_tutor/ui/page/container_flutter.dart';
 import 'package:flutter_tutor/ui/page/custom_progress.dart';
 import 'package:flutter_tutor/ui/page/customproductcard_flut.dart';
 import 'package:flutter_tutor/ui/page/customtabbar_flut.dart';
+import 'package:flutter_tutor/ui/page/dart_snipet_flut.dart';
 import 'package:flutter_tutor/ui/page/doc_flut.dart';
 import 'package:flutter_tutor/ui/page/dragable_flut.dart';
 import 'package:flutter_tutor/ui/page/first_flutter.dart';
@@ -263,7 +264,7 @@ class MyHomePage extends StatelessWidget {
             '53. Multi Bloc In MultiPage App',
             '54. How to Make Dart Snippet',
             MultiBlocMultiPageFlut(),
-            HydratedBlocFlut(),
+            DartSnippetFlut(),
             context: context,
           ),
           menuBelajar(
