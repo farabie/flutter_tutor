@@ -19,6 +19,7 @@ import 'package:flutter_tutor/ui/page/dragable_flut.dart';
 import 'package:flutter_tutor/ui/page/dropdown_flut.dart';
 import 'package:flutter_tutor/ui/page/first_flutter.dart';
 import 'package:flutter_tutor/ui/page/flexible_widget.dart';
+import 'package:flutter_tutor/ui/page/flutterblocflut1.dart';
 import 'package:flutter_tutor/ui/page/font_features.dart';
 import 'package:flutter_tutor/ui/page/getapimethod_flut.dart';
 import 'package:flutter_tutor/ui/page/getlistapi_flut.dart';
@@ -281,7 +282,7 @@ class MyHomePage extends StatelessWidget {
             '57. Infinite (Auto Loading) List With Bloc',
             '58. Flutter Bloc Ver 1.0 & Bloc Visiual',
             InifiniteBloc(),
-            HydratedBlocFlut(),
+            FlutterBlocV1(),
             context: context,
           ),
           menuBelajar(
