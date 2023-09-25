@@ -24,6 +24,7 @@ import 'package:flutter_tutor/ui/page/getapimethod_flut.dart';
 import 'package:flutter_tutor/ui/page/getlistapi_flut.dart';
 import 'package:flutter_tutor/ui/page/gradient_opacity.dart';
 import 'package:flutter_tutor/ui/page/hero_cliprect.dart';
+import 'package:flutter_tutor/ui/page/hiveflut.dart';
 import 'package:flutter_tutor/ui/page/hydrated_blocflut.dart';
 import 'package:flutter_tutor/ui/page/image_flut.dart';
 import 'package:flutter_tutor/ui/page/inkwell_flut.dart';
@@ -272,7 +273,7 @@ class MyHomePage extends StatelessWidget {
             '55. Drop Down Button',
             '56. Hive-Database in Pure Dart',
             DropDownFlut(),
-            HydratedBlocFlut(),
+            HiveFlut(),
             context: context,
           ),
           menuBelajar(
