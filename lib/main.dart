@@ -27,6 +27,7 @@ import 'package:flutter_tutor/ui/page/hero_cliprect.dart';
 import 'package:flutter_tutor/ui/page/hiveflut.dart';
 import 'package:flutter_tutor/ui/page/hydrated_blocflut.dart';
 import 'package:flutter_tutor/ui/page/image_flut.dart';
+import 'package:flutter_tutor/ui/page/infinite_bloc.dart';
 import 'package:flutter_tutor/ui/page/inkwell_flut.dart';
 import 'package:flutter_tutor/ui/page/list_listview_flutter.dart';
 import 'package:flutter_tutor/ui/page/listview_builderflut.dart';
@@ -279,7 +280,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '57. Infinite (Auto Loading) List With Bloc',
             '58. Flutter Bloc Ver 1.0 & Bloc Visiual',
-            SelectToogleColorFiltered(),
+            InifiniteBloc(),
             HydratedBlocFlut(),
             context: context,
           ),
