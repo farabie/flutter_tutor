@@ -34,6 +34,7 @@ import 'package:flutter_tutor/ui/page/inkwell_flut.dart';
 import 'package:flutter_tutor/ui/page/list_listview_flutter.dart';
 import 'package:flutter_tutor/ui/page/listview_builderflut.dart';
 import 'package:flutter_tutor/ui/page/mediaquery_flut.dart';
+import 'package:flutter_tutor/ui/page/mobstateflut.dart';
 import 'package:flutter_tutor/ui/page/multibloc_multipage/multiblo_multipageflut.dart';
 import 'package:flutter_tutor/ui/page/mvvm_flut.dart';
 import 'package:flutter_tutor/ui/page/navigation_multi.dart';
@@ -290,7 +291,7 @@ class MyHomePage extends StatelessWidget {
             '59. Extension',
             '60. MOBX State Management',
             ExtensionFlut(),
-            HydratedBlocFlut(),
+            MobStatexFlut(),
             context: context,
           ),
         ],
