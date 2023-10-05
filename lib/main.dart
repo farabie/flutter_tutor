@@ -14,6 +14,7 @@ import 'package:flutter_tutor/ui/page/custom_progress.dart';
 import 'package:flutter_tutor/ui/page/customproductcard_flut.dart';
 import 'package:flutter_tutor/ui/page/customtabbar_flut.dart';
 import 'package:flutter_tutor/ui/page/dart_snipet_flut.dart';
+import 'package:flutter_tutor/ui/page/division_flut.dart';
 import 'package:flutter_tutor/ui/page/doc_flut.dart';
 import 'package:flutter_tutor/ui/page/dragable_flut.dart';
 import 'package:flutter_tutor/ui/page/dropdown_flut.dart';
@@ -290,6 +291,41 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '59. Extension',
             '60. MOBX State Management',
+            ExtensionFlut(),
+            MobStatexFlut(),
+            context: context,
+          ),
+          menuBelajar(
+            '61. Division(Styling Widget Inspired by CSS)',
+            '62. Widget Slider Using Page View',
+            DivisionFlut(),
+            MobStatexFlut(),
+            context: context,
+          ),
+          menuBelajar(
+            '63. Widget Slider With Transition',
+            '64. Rive + Flutter(Flutter Intereact 19)',
+            ExtensionFlut(),
+            MobStatexFlut(),
+            context: context,
+          ),
+          menuBelajar(
+            '65. Accessibility-Semantic Widget',
+            '66. Unit Testing',
+            ExtensionFlut(),
+            MobStatexFlut(),
+            context: context,
+          ),
+          menuBelajar(
+            '67. Membuat Class Tiruan dengan MockKito',
+            '68. Equatable',
+            ExtensionFlut(),
+            MobStatexFlut(),
+            context: context,
+          ),
+          menuBelajar(
+            '69. Simulasi HTTP Request dengan Mockito',
+            '70. Bloc Test Bagian 1',
             ExtensionFlut(),
             MobStatexFlut(),
             context: context,
