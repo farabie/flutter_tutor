@@ -60,6 +60,7 @@ import 'package:flutter_tutor/ui/page/textstyle_flut.dart';
 import 'package:flutter_tutor/ui/page/textwidgetdecord_flut.dart';
 import 'package:flutter_tutor/ui/page/timerflut.dart';
 import 'package:flutter_tutor/ui/page/transorm_belahketupat.dart';
+import 'package:flutter_tutor/ui/page/widget_slidersflut.dart';
 
 void main() async {
   runApp(MyApp());
@@ -299,13 +300,13 @@ class MyHomePage extends StatelessWidget {
             '61. Division(Styling Widget Inspired by CSS)',
             '62. Widget Slider Using Page View',
             DivisionFlut(),
-            MobStatexFlut(),
+            WidgetSlidersFlut(),
             context: context,
           ),
           menuBelajar(
             '63. Widget Slider With Transition',
             '64. Rive + Flutter(Flutter Intereact 19)',
-            ExtensionFlut(),
+            WidgetSlidersFlut(),
             MobStatexFlut(),
             context: context,
           ),
