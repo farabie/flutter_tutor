@@ -61,6 +61,7 @@ import 'package:flutter_tutor/ui/page/textwidgetdecord_flut.dart';
 import 'package:flutter_tutor/ui/page/timerflut.dart';
 import 'package:flutter_tutor/ui/page/transorm_belahketupat.dart';
 import 'package:flutter_tutor/ui/page/widget_slidersflut.dart';
+import 'package:flutter_tutor/ui/page/widget_sliderstransitionflut.dart';
 
 void main() async {
   runApp(MyApp());
@@ -306,7 +307,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '63. Widget Slider With Transition',
             '64. Rive + Flutter(Flutter Intereact 19)',
-            WidgetSlidersFlut(),
+            WidgetSlidersTransitionFlut(),
             MobStatexFlut(),
             context: context,
           ),
