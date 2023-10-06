@@ -46,6 +46,7 @@ import 'package:flutter_tutor/ui/page/providersmultiflut.dart';
 import 'package:flutter_tutor/ui/page/providsingleflut.dart';
 import 'package:flutter_tutor/ui/page/qrcode_flut.dart';
 import 'package:flutter_tutor/ui/page/readqr_code_flut.dart';
+import 'package:flutter_tutor/ui/page/rive_flut.dart';
 import 'package:flutter_tutor/ui/page/row_column.dart';
 import 'package:flutter_tutor/ui/page/select_toogle_flut.dart';
 import 'package:flutter_tutor/ui/page/sharedprefrence_dmflut.dart';
@@ -308,7 +309,7 @@ class MyHomePage extends StatelessWidget {
             '63. Widget Slider With Transition',
             '64. Rive + Flutter(Flutter Intereact 19)',
             WidgetSlidersTransitionFlut(),
-            MobStatexFlut(),
+            RiveFlut(),
             context: context,
           ),
           menuBelajar(

@@ -44,6 +44,7 @@ dependencies:
   flutter_bloc: ^6.0.0
   hydrated_bloc: ^6.0.0
   division: ^0.9.0
+  flare_flutter: ^3.0.0
   # audioplayers: ^1.0.0
   # qrscan: ^0.3.3
 
@@ -77,6 +78,7 @@ flutter:
     - images/bg_sunset.jpg
     - images/facebook.png
     - images/twitter.png
+    - assets/switch_daytime.flr
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
