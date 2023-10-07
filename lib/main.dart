@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutor/ui/page/Textfield_widget_flut.dart';
+import 'package:flutter_tutor/ui/page/accesbility_semanticflut.dart';
 import 'package:flutter_tutor/ui/page/animated_container.dart';
 import 'package:flutter_tutor/ui/page/animated_paddingflut.dart';
 import 'package:flutter_tutor/ui/page/anonymous_flutter.dart';
@@ -61,6 +62,7 @@ import 'package:flutter_tutor/ui/page/textstyle_flut.dart';
 import 'package:flutter_tutor/ui/page/textwidgetdecord_flut.dart';
 import 'package:flutter_tutor/ui/page/timerflut.dart';
 import 'package:flutter_tutor/ui/page/transorm_belahketupat.dart';
+import 'package:flutter_tutor/ui/page/unit_testingflut.dart';
 import 'package:flutter_tutor/ui/page/widget_slidersflut.dart';
 import 'package:flutter_tutor/ui/page/widget_sliderstransitionflut.dart';
 
@@ -315,8 +317,8 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '65. Accessibility-Semantic Widget',
             '66. Unit Testing',
-            ExtensionFlut(),
-            MobStatexFlut(),
+            AccesbilitySemantic(),
+            UnitTestingFlut(),
             context: context,
           ),
           menuBelajar(
