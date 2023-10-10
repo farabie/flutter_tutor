@@ -37,6 +37,7 @@ import 'package:flutter_tutor/ui/page/list_listview_flutter.dart';
 import 'package:flutter_tutor/ui/page/listview_builderflut.dart';
 import 'package:flutter_tutor/ui/page/mediaquery_flut.dart';
 import 'package:flutter_tutor/ui/page/mobstateflut.dart';
+import 'package:flutter_tutor/ui/page/mockitoflut.dart';
 import 'package:flutter_tutor/ui/page/multibloc_multipage/multiblo_multipageflut.dart';
 import 'package:flutter_tutor/ui/page/mvvm_flut.dart';
 import 'package:flutter_tutor/ui/page/navigation_multi.dart';
@@ -328,7 +329,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '67. Membuat Class Tiruan dengan MockKito',
             '68. Equatable',
-            const ExtensionFlut(),
+            const MockKitoFlut(),
             const MobStatexFlut(),
             context: context,
           ),
