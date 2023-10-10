@@ -18,7 +18,7 @@ class _GetHttpFlutState extends State<GetHttpFlut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Tutor Get Data API'),
+          title: const Text('Tutor Get Data API'),
         ),
         body: Center(
           child: Column(
@@ -26,7 +26,7 @@ class _GetHttpFlutState extends State<GetHttpFlut> {
             children: <Widget>[
               Text(
                 (user != null)
-                    ? user!.id + " | " + user!.name
+                    ? "${user!.id} | ${user!.name}"
                     : "Tidak ada data",
               ),
               ElevatedButton(
@@ -36,7 +36,7 @@ class _GetHttpFlutState extends State<GetHttpFlut> {
                     setState(() {});
                   });
                 },
-                child: Text('Get Data'),
+                child: const Text('Get Data'),
               )
             ],
           ),

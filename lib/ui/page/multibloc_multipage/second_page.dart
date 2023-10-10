@@ -5,6 +5,8 @@ import 'package:flutter_tutor/bloc/counter_bloc.dart';
 import 'package:flutter_tutor/ui/widget/draft_widget.dart';
 
 class SecondPage extends StatelessWidget {
+  const SecondPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     ColorBloc colorBloc = BlocProvider.of<ColorBloc>(context);
@@ -23,7 +25,7 @@ class SecondPage extends StatelessWidget {
                   }),
                   child: Text(
                     number.toString(),
-                    style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
@@ -36,12 +38,12 @@ class SecondPage extends StatelessWidget {
                     },
                     style: ElevatedButton.styleFrom(
                       shape: (color == Colors.pink)
-                          ? CircleBorder(
+                          ? const CircleBorder(
                               side: BorderSide(
                               color: Colors.black,
                               width: 3,
                             ))
-                          : CircleBorder(),
+                          : const CircleBorder(),
                       backgroundColor: Colors.pink,
                     ),
                     child: null,
@@ -52,12 +54,12 @@ class SecondPage extends StatelessWidget {
                     },
                     style: ElevatedButton.styleFrom(
                       shape: (color == Colors.amber)
-                          ? CircleBorder(
+                          ? const CircleBorder(
                               side: BorderSide(
                               color: Colors.black,
                               width: 3,
                             ))
-                          : CircleBorder(),
+                          : const CircleBorder(),
                       backgroundColor: Colors.amber,
                     ),
                     child: null,
@@ -68,13 +70,13 @@ class SecondPage extends StatelessWidget {
                     },
                     style: ElevatedButton.styleFrom(
                       shape: (color == Colors.purple)
-                          ? CircleBorder(
+                          ? const CircleBorder(
                               side: BorderSide(
                                 color: Colors.black,
                                 width: 3,
                               ),
                             )
-                          : CircleBorder(),
+                          : const CircleBorder(),
                       backgroundColor: Colors.purple,
                     ),
                     child: null,

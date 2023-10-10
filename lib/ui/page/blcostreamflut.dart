@@ -32,7 +32,7 @@ class _BlocStreamFlutState extends State<BlocStreamFlut> {
               },
               backgroundColor: Colors.amber,
             ),
-            SizedBox(
+            const SizedBox(
               width: 10,
             ),
             FloatingActionButton(
@@ -45,7 +45,7 @@ class _BlocStreamFlutState extends State<BlocStreamFlut> {
           ],
         ),
         appBar: AppBar(
-          title: Text('Bloc Tanpa Library'),
+          title: const Text('Bloc Tanpa Library'),
         ),
         body: Center(
           child: StreamBuilder(
@@ -53,7 +53,7 @@ class _BlocStreamFlutState extends State<BlocStreamFlut> {
             initialData: Colors.amber,
             builder: (context, snapshot) {
               return AnimatedContainer(
-                duration: Duration(
+                duration: const Duration(
                   milliseconds: 500,
                 ),
                 width: 100,

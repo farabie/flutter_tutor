@@ -19,7 +19,7 @@ class _TimerFlutState extends State<TimerFlut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Tutorial Timer'),
+          title: const Text('Tutorial Timer'),
         ),
         body: Center(
           child: Column(
@@ -33,20 +33,20 @@ class _TimerFlutState extends State<TimerFlut> {
                   color: (isBlack) ? Colors.black : Colors.red,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               ElevatedButton(
                 onPressed: () {
-                  Timer(Duration(seconds: 5), () {
+                  Timer(const Duration(seconds: 5), () {
                     setState(() {
                       isBlack = !isBlack;
                     });
                   });
                 },
-                child: Text('Ubah Warna 5 detik Kemudian'),
+                child: const Text('Ubah Warna 5 detik Kemudian'),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               ElevatedButton(
@@ -57,15 +57,15 @@ class _TimerFlutState extends State<TimerFlut> {
                     });
                   });
                 },
-                child: Text('Ubah Warna Secara Langsung'),
+                child: const Text('Ubah Warna Secara Langsung'),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               ElevatedButton(
                 onPressed: () {
                   isStop = false;
-                  Timer.periodic(Duration(seconds: 1), (timer) {
+                  Timer.periodic(const Duration(seconds: 1), (timer) {
                     if (isStop) {
                       timer.cancel();
                     }
@@ -74,9 +74,9 @@ class _TimerFlutState extends State<TimerFlut> {
                     });
                   });
                 },
-                child: Text('Start Timer'),
+                child: const Text('Start Timer'),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               ElevatedButton(
@@ -85,7 +85,7 @@ class _TimerFlutState extends State<TimerFlut> {
                     isStop = true;
                   });
                 },
-                child: Text('Stop Timer'),
+                child: const Text('Stop Timer'),
               ),
             ],
           ),

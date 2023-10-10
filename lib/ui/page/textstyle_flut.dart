@@ -9,9 +9,9 @@ class TextStyleFlut extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Text Style Demo'),
+          title: const Text('Text Style Demo'),
         ),
-        body: Center(
+        body: const Center(
           child: Text(
             'Ini Adalah Text',
             style: TextStyle(

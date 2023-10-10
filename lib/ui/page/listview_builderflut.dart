@@ -1,7 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_tutor/ui/widget/product_card.dart';
-import 'package:bloc/bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ListViewBuilderFlut extends StatelessWidget {
@@ -24,13 +23,15 @@ class ListViewBuilderFlut extends StatelessWidget {
 class MainPage extends StatelessWidget {
   final Random r = Random();
 
+  MainPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     ProductBloc bloc = BlocProvider.of<ProductBloc>(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: firstColor,
-        title: Text('Demo List View Builde'),
+        title: const Text('Demo List View Builde'),
       ),
       body: Column(
         children: <Widget>[
@@ -41,7 +42,7 @@ class MainPage extends StatelessWidget {
             onPressed: () {
               bloc.add(r.nextInt(4) + 2);
             },
-            child: Text(
+            child: const Text(
               'Create Products',
               style: TextStyle(
                 color: Colors.white,
@@ -59,7 +60,7 @@ class MainPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       (index == 0)
-                          ? SizedBox(
+                          ? const SizedBox(
                               width: 20,
                             )
                           : Container(),
@@ -74,7 +75,7 @@ class MainPage extends StatelessWidget {
                         notification: "Berhasil",
                         onIncTap: () {},
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 20,
                       )
                     ],
@@ -108,7 +109,7 @@ class ProductBloc extends Bloc<int, List<Product>> {
         Product(
           imageURL:
               "https://5.imimg.com/data5/RX/JD/GW/SELLER-4711940/fresh-mix-fruit-500x500.jpg",
-          name: "Produk Ke-" + (i + 1).toString(),
+          name: "Produk Ke-${i + 1}",
           price: (i + 1) * 5000,
         ),
       );

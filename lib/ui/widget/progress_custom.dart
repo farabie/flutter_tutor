@@ -5,7 +5,7 @@ class ProgressCustom extends StatelessWidget {
   final int value;
   final int totalValue;
 
-  ProgressCustom({this.width = 0, this.value = 0, this.totalValue = 0});
+  const ProgressCustom({super.key, this.width = 0, this.value = 0, this.totalValue = 0});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class ProgressCustom extends StatelessWidget {
           Icons.alarm,
           color: Colors.grey[700],
         ),
-        SizedBox(
+        const SizedBox(
           width: 10,
         ),
         Stack(
@@ -35,7 +35,7 @@ class ProgressCustom extends StatelessWidget {
               child: AnimatedContainer(
                 height: 10,
                 width: width * ratio,
-                duration: Duration(
+                duration: const Duration(
                   milliseconds: 500,
                 ),
                 decoration: BoxDecoration(

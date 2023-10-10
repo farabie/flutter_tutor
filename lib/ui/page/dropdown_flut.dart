@@ -5,7 +5,7 @@ class DropDownFlut extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MainPage(),
     );
@@ -13,6 +13,8 @@ class DropDownFlut extends StatelessWidget {
 }
 
 class MainPage extends StatefulWidget {
+  const MainPage({super.key});
+
   @override
   State<MainPage> createState() => _MainPageState();
 }
@@ -31,8 +33,8 @@ class _MainPageState extends State<MainPage> {
     for (var item in persons) {
       items.add(
         DropdownMenuItem(
-          child: Text(item.cat),
           value: item,
+          child: Text(item.cat),
         ),
       );
     }
@@ -43,15 +45,15 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Demo Dropdown'),
+        title: const Text('Demo Dropdown'),
       ),
       body: Column(
         children: <Widget>[
           Container(
-            margin: EdgeInsets.all(20),
+            margin: const EdgeInsets.all(20),
             child: DropdownButton(
               isExpanded: true,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
@@ -69,7 +71,7 @@ class _MainPageState extends State<MainPage> {
             (selectedPerson != null)
                 ? selectedPerson.cat
                 : "Belum Ada Yang dipilih",
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
             ),

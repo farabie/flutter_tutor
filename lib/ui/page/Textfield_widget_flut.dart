@@ -16,14 +16,14 @@ class _TextFieldFlutState extends State<TextFieldFlut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Textfield Widget'),
+          title: const Text('Textfield Widget'),
         ),
         body: Container(
-          margin: EdgeInsets.symmetric(horizontal: 10),
+          margin: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              Text('Inpukan Nama Anda'),
+              const Text('Inpukan Nama Anda'),
               Container(
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.black, width: 2),

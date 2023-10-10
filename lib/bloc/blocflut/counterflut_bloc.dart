@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter_tutor/bloc/blocflut/blocflut.dart';
 
 class CounterflutBloc extends Bloc<CounterflutEvent, CounterflutState> {
-  CounterflutBloc(CounterflutState initialState) : super(CounterflutState(0));
+  CounterflutBloc(CounterflutState initialState) : super(const CounterflutState(0));
 
   @override
   Stream<CounterflutState> mapEventToState(CounterflutEvent event) async* {

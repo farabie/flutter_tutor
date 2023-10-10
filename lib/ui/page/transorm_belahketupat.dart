@@ -15,7 +15,7 @@ class _TransformFlutState extends State<TransformFlut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Tutorial Transform'),
+          title: const Text('Tutorial Transform'),
         ),
         body: Center(
           child: Row(

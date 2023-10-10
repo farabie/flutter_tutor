@@ -14,7 +14,7 @@ class _FlexibleFlutState extends State<FlexibleFlut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Latihan Flexible Widget'),
+          title: const Text('Latihan Flexible Widget'),
         ),
         body: Column(
           children: <Widget>[

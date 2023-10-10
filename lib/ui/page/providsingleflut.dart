@@ -35,15 +35,15 @@ class ProviderSingleFlut extends StatelessWidget {
                     width: 100,
                     height: 100,
                     color: applicationColor.color,
-                    duration: Duration(milliseconds: 500),
+                    duration: const Duration(milliseconds: 500),
                   ),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Container(
-                      margin: EdgeInsets.all(5),
-                      child: Text("AB"),
+                      margin: const EdgeInsets.all(5),
+                      child: const Text("AB"),
                     ),
                     Consumer<ApplicationColor>(
                       builder: (context, applicationColor, _) => Switch(
@@ -54,8 +54,8 @@ class ProviderSingleFlut extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(5),
-                      child: Text("LB"),
+                      margin: const EdgeInsets.all(5),
+                      child: const Text("LB"),
                     ),
                   ],
                 )

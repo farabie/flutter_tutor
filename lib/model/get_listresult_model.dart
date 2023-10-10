@@ -18,7 +18,7 @@ class User {
 
   //Fungsi untuk getlist atau connect api
   static Future<List<User>> getUsers(String page) async {
-    var apiURL = Uri(path: "https://reqres.in/api/users?page=${page}");
+    var apiURL = Uri(path: "https://reqres.in/api/users?page=$page");
 
     var apiResult = await http.get(apiURL);
     var jsonObject = json.decode(apiResult.body);

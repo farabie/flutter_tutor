@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutor/ui/widget/progress_custom.dart';
 
 const Color firstColor = Color(0xffF44336);
-const Color secondColor = Color(0xff4CAF450);
+const Color secondColor = Color(0xff4caf450);
 
 class ProductCard extends StatelessWidget {
   final String imageURL;
@@ -21,7 +21,7 @@ class ProductCard extends StatelessWidget {
       fontWeight: FontWeight.bold,
       color: Colors.grey[800]);
 
-  ProductCard({
+  ProductCard({super.key, 
     this.imageURL = "",
     this.name = "",
     this.price = "",
@@ -40,23 +40,23 @@ class ProductCard extends StatelessWidget {
       children: <Widget>[
         ///Notification
         AnimatedContainer(
-          padding: EdgeInsets.all(2),
-          margin: EdgeInsets.only(
+          padding: const EdgeInsets.all(2),
+          margin: const EdgeInsets.only(
             left: 10,
             right: 10,
           ),
           width: 130,
-          duration: Duration(milliseconds: 300),
+          duration: const Duration(milliseconds: 300),
           height: (notification != null) ? 300 : 270,
           decoration: BoxDecoration(
             boxShadow: [
               BoxShadow(
                 blurRadius: 3,
-                offset: Offset(1, 1),
+                offset: const Offset(1, 1),
                 color: Colors.black.withOpacity(0.3),
               )
             ],
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
                 bottomLeft: Radius.circular(5),
                 bottomRight: Radius.circular(5)),
             color: secondColor,
@@ -84,7 +84,7 @@ class ProductCard extends StatelessWidget {
               BoxShadow(
                 color: Colors.black.withOpacity(0.2),
                 blurRadius: 6,
-                offset: Offset(1, 1),
+                offset: const Offset(1, 1),
               )
             ],
           ),
@@ -99,7 +99,7 @@ class ProductCard extends StatelessWidget {
                     width: 150,
                     height: 100,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(16),
                         topRight: Radius.circular(16),
                       ),
@@ -110,7 +110,7 @@ class ProductCard extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.all(5),
+                    margin: const EdgeInsets.all(5),
                     child: Text(
                       name,
                       style: textStyle,
@@ -118,7 +118,7 @@ class ProductCard extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(
+                    margin: const EdgeInsets.only(
                       left: 5,
                       right: 5,
                     ),
@@ -137,19 +137,19 @@ class ProductCard extends StatelessWidget {
               Column(
                 children: <Widget>[
                   Container(
-                    margin: EdgeInsets.all(5),
+                    margin: const EdgeInsets.all(5),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
-                        Icon(
+                        const Icon(
                           Icons.card_giftcard,
                           size: 16,
                           color: Colors.black,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
-                        Text(stock.toString() + "/10 pcs")
+                        Text("$stock/10 pcs")
                       ],
                     ),
                   ),
@@ -168,7 +168,7 @@ class ProductCard extends StatelessWidget {
                         child: AnimatedContainer(
                           height: 5,
                           width: progressBarWidth,
-                          duration: Duration(
+                          duration: const Duration(
                             milliseconds: 500,
                           ),
                           decoration: BoxDecoration(
@@ -203,7 +203,7 @@ class ProductCard extends StatelessWidget {
                             width: 30,
                             height: 30,
                             color: firstColor,
-                            child: Icon(
+                            child: const Icon(
                               Icons.remove,
                               size: 18,
                               color: Colors.white,
@@ -220,7 +220,7 @@ class ProductCard extends StatelessWidget {
                             width: 30,
                             height: 30,
                             color: firstColor,
-                            child: Icon(
+                            child: const Icon(
                               Icons.add,
                               size: 18,
                               color: Colors.white,
@@ -234,7 +234,7 @@ class ProductCard extends StatelessWidget {
                     width: 140,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        shape: RoundedRectangleBorder(
+                        shape: const RoundedRectangleBorder(
                             borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(16),
                           bottomRight: Radius.circular(16),
@@ -242,7 +242,7 @@ class ProductCard extends StatelessWidget {
                         backgroundColor: firstColor,
                       ),
                       onPressed: onAddCartTap,
-                      child: Icon(
+                      child: const Icon(
                         Icons.add_shopping_cart,
                         size: 18,
                         color: Colors.white,

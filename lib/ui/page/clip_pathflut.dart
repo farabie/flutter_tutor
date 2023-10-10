@@ -9,12 +9,12 @@ class ClipPathFlut extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Clip Path Tutor'),
+          title: const Text('Clip Path Tutor'),
         ),
         body: Center(
           child: ClipPath(
             clipper: MyClipper(),
-            child: Image(
+            child: const Image(
               width: 300,
               fit: BoxFit.cover,
               image: NetworkImage(

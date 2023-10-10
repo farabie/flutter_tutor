@@ -14,7 +14,7 @@ class _AnonymousFlutState extends State<AnonymousFlut> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Tutor Anonymous'),
+          title: const Text('Tutor Anonymous'),
         ),
         body: Center(
           child: Column(
@@ -29,7 +29,7 @@ class _AnonymousFlutState extends State<AnonymousFlut> {
                     message = 'Tombol Sudah ditekan';
                   });
                 },
-                child: Text('Tekan Saya'),
+                child: const Text('Tekan Saya'),
               )
             ],
           ),

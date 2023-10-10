@@ -12,8 +12,8 @@ class FlutterBlocV1 extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: BlocProvider<CounterflutBloc>(
-        create: (context) => CounterflutBloc(CounterflutState(0)),
-        child: MainPage(),
+        create: (context) => CounterflutBloc(const CounterflutState(0)),
+        child: const MainPage(),
       ),
     );
   }

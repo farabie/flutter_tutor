@@ -5,7 +5,7 @@ import 'package:flutter_tutor/style/custom_style.dart';
 class CustomButton extends StatefulWidget {
   final ParentStyle buttonStyle;
 
-  CustomButton(this.buttonStyle);
+  const CustomButton(this.buttonStyle, {super.key});
 
   @override
   State<CustomButton> createState() => _CustomButtonState();
@@ -16,12 +16,6 @@ class _CustomButtonState extends State<CustomButton> {
   @override
   Widget build(BuildContext context) {
     return Parent(
-      child: Container(
-        child: Txt(
-          'Division',
-          style: CustomStyles.txtStyle,
-        ),
-      ),
       style: widget.buttonStyle.clone()
         ..scale((isTap) ? 1.1 : 1)
         ..elevation((isTap) ? 0 : 5),
@@ -41,6 +35,12 @@ class _CustomButtonState extends State<CustomButton> {
             isTap = false;
           });
         }),
+      child: Container(
+        child: Txt(
+          'Division',
+          style: CustomStyles.txtStyle,
+        ),
+      ),
     );
   }
 }

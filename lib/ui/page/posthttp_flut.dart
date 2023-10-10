@@ -16,7 +16,7 @@ class _PostHttpFlutState extends State<PostHttpFlut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Test API POST METHOD'),
+          title: const Text('Test API POST METHOD'),
         ),
         body: Center(
           child: Column(
@@ -24,13 +24,7 @@ class _PostHttpFlutState extends State<PostHttpFlut> {
             children: <Widget>[
               Text(
                 (postResult != null)
-                    ? postResult!.id +
-                        " | " +
-                        postResult!.job +
-                        " | " +
-                        postResult!.name +
-                        " | " +
-                        postResult!.created
+                    ? "${postResult!.id} | ${postResult!.job} | ${postResult!.name} | ${postResult!.created}"
                     : "Tidak ada data",
               ),
               ElevatedButton(
@@ -41,7 +35,7 @@ class _PostHttpFlutState extends State<PostHttpFlut> {
                     setState(() {});
                   });
                 },
-                child: Text('POST'),
+                child: const Text('POST'),
               )
             ],
           ),

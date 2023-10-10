@@ -12,7 +12,7 @@ class CustomProgress extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: AppBar(
-            title: Text('Custom Progress Bar(Timer + Provider)'),
+            title: const Text('Custom Progress Bar(Timer + Provider)'),
           ),
           body: MultiProvider(
             providers: [
@@ -33,23 +33,24 @@ class CustomProgress extends StatelessWidget {
                       totalValue: 15,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Consumer<TimeStateBackward>(
                     builder: (context, timeStateBackward, _) => ElevatedButton(
                       onPressed: () {
                         Timer.periodic(
-                            Duration(
+                            const Duration(
                               seconds: 1,
                             ), (timer) {
-                          if (timeStateBackward.time == 0)
+                          if (timeStateBackward.time == 0) {
                             timer.cancel();
-                          else
+                          } else {
                             timeStateBackward.time -= 1;
+                          }
                         });
                       },
-                      child: Text(
+                      child: const Text(
                         'Start Backward',
                         style: TextStyle(
                           fontSize: 14,
@@ -58,7 +59,7 @@ class CustomProgress extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 75,
                   ),
                   Consumer<TimeStateForward>(
@@ -68,23 +69,24 @@ class CustomProgress extends StatelessWidget {
                       totalValue: 15,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Consumer<TimeStateForward>(
                     builder: (context, timeStateForward, _) => ElevatedButton(
                       onPressed: () {
                         Timer.periodic(
-                            Duration(
+                            const Duration(
                               seconds: 1,
                             ), (timer) {
-                          if (timeStateForward.time == 15)
+                          if (timeStateForward.time == 15) {
                             timer.cancel();
-                          else
+                          } else {
                             timeStateForward.time += 1;
+                          }
                         });
                       },
-                      child: Text(
+                      child: const Text(
                         'Start Forward',
                         style: TextStyle(
                           fontSize: 14,

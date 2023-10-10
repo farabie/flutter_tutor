@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -9,6 +8,8 @@ import '../../../bloc/color_bloc.dart';
 import '../../../bloc/counter_bloc.dart';
 
 class MainPage extends StatelessWidget {
+  const MainPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<ColorBloc, Color>(
@@ -21,7 +22,7 @@ class MainPage extends StatelessWidget {
               BlocBuilder<CounterBloc, int>(
                 builder: (context, number) => Text(
                   number.toString(),
-                  style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
                 ),
               ),
               ElevatedButton(
@@ -29,16 +30,16 @@ class MainPage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: ((context) => SecondPage()),
+                      builder: ((context) => const SecondPage()),
                     ),
                   );
                 },
-                child: Text(
+                style: ElevatedButton.styleFrom(
+                    shape: const StadiumBorder(), backgroundColor: color),
+                child: const Text(
                   'Click to Change',
                   style: TextStyle(color: Colors.white),
                 ),
-                style: ElevatedButton.styleFrom(
-                    shape: StadiumBorder(), backgroundColor: color),
               )
             ],
           ),

@@ -27,7 +27,7 @@ class _StaelessFullState extends State<StaelessFull> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Demo Stateful Widget'),
+          title: const Text('Demo Stateful Widget'),
         ),
         body: Center(
           child: Column(

@@ -10,7 +10,7 @@ class OpacityCardCustom extends StatefulWidget {
 class _OpacityCardCustomState extends State<OpacityCardCustom> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: MainPage());
+    return const MaterialApp(debugShowCheckedModeBanner: false, home: MainPage());
   }
 }
 
@@ -21,14 +21,14 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Custom Card Example'),
-        backgroundColor: Color(0xFF8C062F),
+        title: const Text('Custom Card Example'),
+        backgroundColor: const Color(0xFF8C062F),
       ),
       body: Stack(
         children: <Widget>[
           //Background
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 gradient: LinearGradient(
               colors: [
                 Color(0xFFFE5788),
@@ -40,7 +40,7 @@ class MainPage extends StatelessWidget {
           ),
           //Card
           Center(
-            child: Container(
+            child: SizedBox(
               width: MediaQuery.of(context).size.width * 0.8,
               height: MediaQuery.of(context).size.height * 0.7,
               child: Card(
@@ -52,7 +52,7 @@ class MainPage extends StatelessWidget {
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(4),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image: AssetImage('images/pattern.jpg'),
                             fit: BoxFit.cover,
                           ),
@@ -61,7 +61,7 @@ class MainPage extends StatelessWidget {
                     ),
                     Container(
                       height: MediaQuery.of(context).size.height * 0.35,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(4),
                           topRight: Radius.circular(4),
@@ -81,7 +81,7 @@ class MainPage extends StatelessWidget {
                       child: Center(
                         child: Column(
                           children: <Widget>[
-                            Text(
+                            const Text(
                               'Beautiful Sunset at Paddly Field',
                               textAlign: TextAlign.center,
                               style: TextStyle(
@@ -89,8 +89,8 @@ class MainPage extends StatelessWidget {
                               maxLines: 2,
                             ),
                             Container(
-                              margin: EdgeInsets.fromLTRB(0, 20, 0, 15),
-                              child: Row(
+                              margin: const EdgeInsets.fromLTRB(0, 20, 0, 15),
+                              child: const Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   Text(
@@ -106,7 +106,7 @@ class MainPage extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            Row(
+                            const Row(
                               children: <Widget>[
                                 Spacer(
                                   flex: 10,

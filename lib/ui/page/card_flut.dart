@@ -9,7 +9,7 @@ class CardFlut extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.green,
         body: Container(
-          margin: EdgeInsets.all(10),
+          margin: const EdgeInsets.all(10),
           child: ListView(
             children: <Widget>[
               buildCard(Icons.adb, 'Account Box'),
@@ -28,11 +28,11 @@ class CardFlut extends StatelessWidget {
 Card buildCard(IconData iconData, String text) {
   return Card(
     child: Container(
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       child: Row(
         children: <Widget>[
           Icon(iconData),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
           Text(

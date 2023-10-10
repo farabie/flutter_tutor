@@ -37,7 +37,7 @@ class _SharedPreferencesDmFLutState extends State<SharedPreferencesDmFLut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Belajar Shared Preferences & Double Mark'),
+          title: const Text('Belajar Shared Preferences & Double Mark'),
         ),
         body: Center(
           child: Column(
@@ -60,7 +60,7 @@ class _SharedPreferencesDmFLutState extends State<SharedPreferencesDmFLut> {
                   onPressed: () {
                     saveData();
                   },
-                  child: Text('Save')),
+                  child: const Text('Save')),
               ElevatedButton(
                   onPressed: () {
                     getName().then((s) {
@@ -72,7 +72,7 @@ class _SharedPreferencesDmFLutState extends State<SharedPreferencesDmFLut> {
                       setState(() {});
                     });
                   },
-                  child: Text('Load')),
+                  child: const Text('Load')),
             ],
           ),
         ),

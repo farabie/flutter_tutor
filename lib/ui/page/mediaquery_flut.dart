@@ -5,7 +5,7 @@ class MediaQueryFlut extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Tutorial Media Query'),
+          title: const Text('Tutorial Media Query'),
         ),
         body: (MediaQuery.of(context).orientation == Orientation.portrait)
             ? Column(

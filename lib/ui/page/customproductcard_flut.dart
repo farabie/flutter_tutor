@@ -12,7 +12,7 @@ class CustomProductCard extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: firstColor,
-          title: Text("Product Card Example"),
+          title: const Text("Product Card Example"),
         ),
         body: MultiProvider(
           providers: [
@@ -24,7 +24,7 @@ class CustomProductCard extends StatelessWidget {
             )
           ],
           child: Container(
-            margin: EdgeInsets.all(20),
+            margin: const EdgeInsets.all(20),
             child: Align(
               alignment: Alignment.topCenter,
               child: Consumer<StocktState>(

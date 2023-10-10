@@ -5,6 +5,8 @@ import 'package:flutter_tutor/bloc/counter_bloc.dart';
 import 'package:flutter_tutor/ui/page/multibloc_multipage/main_page.dart';
 
 class MultiBlocMultiPageFlut extends StatelessWidget {
+  const MultiBlocMultiPageFlut({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
@@ -16,7 +18,7 @@ class MultiBlocMultiPageFlut extends StatelessWidget {
           create: (context) => CounterBloc(0),
         )
       ],
-      child: MaterialApp(
+      child: const MaterialApp(
         debugShowCheckedModeBanner: false,
         home: MainPage(),
       ),

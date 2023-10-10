@@ -25,14 +25,14 @@ class ProviderMultiFLut extends StatelessWidget {
                     cart.quantity += 1;
                   }
                 },
-                child: Icon(Icons.add_shopping_cart),
                 backgroundColor: Colors.purple,
+                child: const Icon(Icons.add_shopping_cart),
               ),
             ),
           ),
           appBar: AppBar(
             backgroundColor: Colors.purple,
-            title: Text('Providers Multi Flut'),
+            title: const Text('Providers Multi Flut'),
           ),
           body: Center(
             child: Column(
@@ -41,32 +41,38 @@ class ProviderMultiFLut extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text('Balance'),
+                    const Text('Balance'),
                     Container(
+                      height: 30,
+                      width: 150,
+                      margin: const EdgeInsets.all(5),
+                      padding: const EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5),
+                          color: Colors.purple[100],
+                          border: Border.all(width: 2, color: Colors.purple)),
                       child: Align(
                         alignment: Alignment.centerLeft,
                         child: Consumer<Money>(
                           builder: (context, money, _) => Text(
                             money.balance.toString(),
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.purple,
                               fontWeight: FontWeight.w700,
                             ),
                           ),
                         ),
                       ),
-                      height: 30,
-                      width: 150,
-                      margin: EdgeInsets.all(5),
-                      padding: EdgeInsets.all(5),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          color: Colors.purple[100],
-                          border: Border.all(width: 2, color: Colors.purple)),
                     )
                   ],
                 ),
                 Container(
+                  height: 30,
+                  margin: const EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      border: Border.all(width: 2, color: Colors.black)),
                   child: Align(
                       alignment: Alignment.centerRight,
                       child: Consumer<Cart>(
@@ -74,15 +80,15 @@ class ProviderMultiFLut extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             Text(
-                              "Apple (500) x " + cart.quantity.toString(),
-                              style: TextStyle(
+                              "Apple (500) x ${cart.quantity}",
+                              style: const TextStyle(
                                 color: Colors.purple,
                                 fontWeight: FontWeight.w700,
                               ),
                             ),
                             Text(
                               (500 * cart.quantity).toString(),
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.purple,
                                 fontWeight: FontWeight.w700,
                               ),
@@ -90,12 +96,6 @@ class ProviderMultiFLut extends StatelessWidget {
                           ],
                         ),
                       )),
-                  height: 30,
-                  margin: EdgeInsets.all(5),
-                  padding: EdgeInsets.all(5),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(5),
-                      border: Border.all(width: 2, color: Colors.black)),
                 )
               ],
             ),

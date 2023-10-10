@@ -8,23 +8,23 @@ class AppBarGradasiFlut extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.adb),
-          title: Text(
+          leading: const Icon(Icons.adb),
+          title: const Text(
             'AppBar Example',
             style: TextStyle(color: Colors.white),
           ),
           actions: <Widget>[
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.settings),
+              icon: const Icon(Icons.settings),
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.exit_to_app),
+              icon: const Icon(Icons.exit_to_app),
             ),
           ],
           flexibleSpace: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [
                   Color(0xff0096ff),
@@ -44,7 +44,7 @@ class AppBarGradasiFlut extends StatelessWidget {
             ),
           ),
         ),
-        body: Center(
+        body: const Center(
           child: Text('AppBar Gradasi Tutorial'),
         ),
       ),

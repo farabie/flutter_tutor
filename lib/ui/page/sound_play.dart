@@ -49,7 +49,7 @@ class _SoundPlayFlutState extends State<SoundPlayFlut> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Memainkan Musik'),
+          title: const Text('Memainkan Musik'),
         ),
         body: Center(
           child: Column(
@@ -62,29 +62,29 @@ class _SoundPlayFlutState extends State<SoundPlayFlut> {
                   // localSound(
                   //     'http://ia802609.us.archive.org/13/items/quraninindonesia/001AlFaatihah.mp3');
                 },
-                child: Text(
+                child: const Text(
                   'Play',
                 ),
               ),
               ElevatedButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   'Pause',
                 ),
               ),
               ElevatedButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   'Stop',
                 ),
               ),
               ElevatedButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   'Resume',
                 ),
               ),
-              Text(
+              const Text(
                 'Kosong',
                 style: TextStyle(
                   fontSize: 20,

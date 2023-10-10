@@ -5,7 +5,7 @@ class HeroClipFlut extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MainHeroPage(),
     );
@@ -20,19 +20,19 @@ class MainHeroPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.lightBlue[50],
       appBar: AppBar(
-        title: Text('Tutorial Hero Animation'),
+        title: const Text('Tutorial Hero Animation'),
       ),
       body: GestureDetector(
         onTap: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return SecondHeroPage();
+            return const SecondHeroPage();
           }));
         },
         child: Hero(
           tag: 'pp',
           child: ClipRRect(
             borderRadius: BorderRadius.circular(50),
-            child: Container(
+            child: const SizedBox(
               width: 100,
               height: 100,
               child: Image(
@@ -58,14 +58,14 @@ class SecondHeroPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.lightBlue[50],
       appBar: AppBar(
-        title: Text('Tutorial Hero Animation'),
+        title: const Text('Tutorial Hero Animation'),
       ),
       body: Center(
         child: Hero(
           tag: 'pp',
           child: ClipRRect(
             borderRadius: BorderRadius.circular(100),
-            child: Container(
+            child: const SizedBox(
               width: 200,
               height: 200,
               child: Image(

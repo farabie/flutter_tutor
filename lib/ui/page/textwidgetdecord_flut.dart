@@ -16,14 +16,14 @@ class _TextWidgetDecFlutState extends State<TextWidgetDecFlut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Tutorial Text Widget Decord'),
+          title: const Text('Tutorial Text Widget Decord'),
         ),
         body: Container(
-          margin: EdgeInsets.symmetric(horizontal: 10),
+          margin: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              Text('Inpukan Nama Anda'),
+              const Text('Inpukan Nama Anda'),
               TextField(
                 decoration: InputDecoration(
                     fillColor: Colors.lightBlue[50],
@@ -38,22 +38,22 @@ class _TextWidgetDecFlutState extends State<TextWidgetDecFlut> {
                       height: 5,
                       color: Colors.red,
                     ),
-                    icon: Icon(Icons.adb),
-                    prefixIcon: Icon(
+                    icon: const Icon(Icons.adb),
+                    prefixIcon: const Icon(
                       Icons.person,
                       size: 24,
                     ), //Prefix letaknya didepan
                     prefixText: 'Name: ',
-                    prefixStyle: TextStyle(
+                    prefixStyle: const TextStyle(
                       color: Colors.blue,
                       fontWeight: FontWeight.w600,
                     ),
                     //Label letaknya diatas dari text widget
                     labelText: 'Isi Nama anda:',
-                    labelStyle: TextStyle(fontSize: 14, color: Colors.blue),
+                    labelStyle: const TextStyle(fontSize: 14, color: Colors.blue),
                     hintText:
                         'Isikan nama anda disini', //hint berfungsi untuk memberitahu apa yang akan diisi
-                    hintStyle: TextStyle(fontSize: 12),
+                    hintStyle: const TextStyle(fontSize: 12),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
                     )),

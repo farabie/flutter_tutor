@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 class DartSnippetFlut extends StatelessWidget {
+  const DartSnippetFlut({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MainPage(),
     );
@@ -11,13 +13,15 @@ class DartSnippetFlut extends StatelessWidget {
 }
 
 class MainPage extends StatelessWidget {
+  const MainPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Demo DartSnippet'),
+        title: const Text('Demo DartSnippet'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Ini adalah Contoh Dart Snippet Custom'),
       ),
     );

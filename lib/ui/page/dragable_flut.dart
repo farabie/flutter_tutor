@@ -18,7 +18,7 @@ class _DragableFlutState extends State<DragableFlut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: AppBar(
-            title: Text('Tutor Dragable'),
+            title: const Text('Tutor Dragable'),
           ),
           body: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -28,16 +28,7 @@ class _DragableFlutState extends State<DragableFlut> {
                 children: <Widget>[
                   Draggable<Color>(
                     data: color1,
-                    child: SizedBox(
-                      width: 50,
-                      height: 50,
-                      child: Material(
-                        color: color1,
-                        shape: StadiumBorder(),
-                        elevation: 3,
-                      ),
-                    ),
-                    childWhenDragging: SizedBox(
+                    childWhenDragging: const SizedBox(
                       width: 50,
                       height: 50,
                       child: Material(
@@ -50,22 +41,22 @@ class _DragableFlutState extends State<DragableFlut> {
                       height: 50,
                       child: Material(
                         color: color1.withOpacity(0.2),
-                        shape: StadiumBorder(),
+                        shape: const StadiumBorder(),
+                      ),
+                    ),
+                    child: SizedBox(
+                      width: 50,
+                      height: 50,
+                      child: Material(
+                        color: color1,
+                        shape: const StadiumBorder(),
+                        elevation: 3,
                       ),
                     ),
                   ),
                   Draggable<Color>(
                     data: color2,
-                    child: SizedBox(
-                      width: 50,
-                      height: 50,
-                      child: Material(
-                        color: color2,
-                        shape: StadiumBorder(),
-                        elevation: 3,
-                      ),
-                    ),
-                    childWhenDragging: SizedBox(
+                    childWhenDragging: const SizedBox(
                       width: 50,
                       height: 50,
                       child: Material(
@@ -78,7 +69,16 @@ class _DragableFlutState extends State<DragableFlut> {
                       height: 50,
                       child: Material(
                         color: color2.withOpacity(0.2),
-                        shape: StadiumBorder(),
+                        shape: const StadiumBorder(),
+                      ),
+                    ),
+                    child: SizedBox(
+                      width: 50,
+                      height: 50,
+                      child: Material(
+                        color: color2,
+                        shape: const StadiumBorder(),
+                        elevation: 3,
                       ),
                     ),
                   )
@@ -97,10 +97,10 @@ class _DragableFlutState extends State<DragableFlut> {
                           height: 100,
                           child: Material(
                             color: targetColor,
-                            shape: StadiumBorder(),
+                            shape: const StadiumBorder(),
                           ),
                         )
-                      : SizedBox(
+                      : const SizedBox(
                           width: 100,
                           height: 100,
                           child: Material(

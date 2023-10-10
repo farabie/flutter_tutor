@@ -14,7 +14,7 @@ class _ImageFlutState extends State<ImageFlut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Tutorial Image Widget'),
+          title: const Text('Tutorial Image Widget'),
         ),
         body: Center(
           child: Column(
@@ -24,8 +24,8 @@ class _ImageFlutState extends State<ImageFlut> {
                 color: Colors.black,
                 width: 200,
                 height: 200,
-                padding: EdgeInsets.all(3),
-                margin: EdgeInsets.only(
+                padding: const EdgeInsets.all(3),
+                margin: const EdgeInsets.only(
                   bottom: 10,
                 ),
                 //Untuk mengambil gambar dari internet
@@ -41,7 +41,7 @@ class _ImageFlutState extends State<ImageFlut> {
                 color: Colors.black,
                 width: 200,
                 height: 200,
-                padding: EdgeInsets.all(3),
+                padding: const EdgeInsets.all(3),
                 child: Image.asset(
                   'images/luffy.jpg',
                   fit: BoxFit.contain, //Contain default dari imagenya

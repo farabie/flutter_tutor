@@ -10,14 +10,14 @@ class RiveFlut extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.purple,
-          title: Text(
+          title: const Text(
             'Rive + Flutter',
             style: TextStyle(
               color: Colors.white,
             ),
           ),
         ),
-        body: Center(
+        body: const Center(
           child: SwitchDayNight(),
         ),
       ),

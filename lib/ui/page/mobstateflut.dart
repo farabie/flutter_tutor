@@ -5,7 +5,7 @@ class MobStatexFlut extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MainPage(),
     );
@@ -19,9 +19,9 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Demo MobStateX'),
+          title: const Text('Demo MobStateX'),
         ),
-        body: Center(
+        body: const Center(
           child: Text('Cek Di Repository MobState x'),
         ));
   }

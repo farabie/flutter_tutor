@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class SecondPage extends StatelessWidget {
+  const SecondPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Second Page'),
+        title: const Text('Second Page'),
       ),
       body: Center(
         child: ElevatedButton(
@@ -13,7 +15,7 @@ class SecondPage extends StatelessWidget {
             Navigator.pop(
                 context); //Menaikan screen saja tapi tidak dibuang/mengangkat
           },
-          child: Text('Go To Main Page'),
+          child: const Text('Go To Main Page'),
         ),
       ),
     );

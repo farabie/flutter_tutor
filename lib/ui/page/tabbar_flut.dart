@@ -10,7 +10,7 @@ class TabBarFlut extends StatefulWidget {
 class _TabBarFlutState extends State<TabBarFlut> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: DefaultTabController(length: 4, child: MainPageTab()),
     );
@@ -24,8 +24,8 @@ class MainPageTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tutorial Tab Bar'),
-        bottom: TabBar(tabs: <Widget>[
+        title: const Text('Tutorial Tab Bar'),
+        bottom: const TabBar(tabs: <Widget>[
           Tab(
             icon: Icon(Icons.comment),
             text: 'Comment',
@@ -43,7 +43,7 @@ class MainPageTab extends StatelessWidget {
           ),
         ]),
       ),
-      body: TabBarView(
+      body: const TabBarView(
         children: <Widget>[
           FirstPage(),
           Center(
@@ -66,9 +66,9 @@ class FirstPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
-        child: Container(
+        child: SizedBox(
           width: 100,
           height: 100,
           child: Image(

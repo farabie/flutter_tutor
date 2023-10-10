@@ -1,9 +1,9 @@
-import 'package:division/division.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tutor/ui/widget/movie_box.dart';
-import '../../../style/page_styles.dart';
 
 class MainPage extends StatelessWidget {
+  const MainPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     PageController controller =
@@ -17,7 +17,7 @@ class MainPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text('Movie Box Demo'),
+          title: const Text('Movie Box Demo'),
         ),
         body: PageView.builder(
             controller: controller,

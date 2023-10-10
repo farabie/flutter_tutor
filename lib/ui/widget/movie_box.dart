@@ -6,7 +6,7 @@ class MovieBox extends StatelessWidget {
   final String urls;
   final double scale;
 
-  MovieBox(this.urls, {this.scale = 1});
+  const MovieBox(this.urls, {super.key, this.scale = 1});
   @override
   Widget build(BuildContext context) {
     return Parent(

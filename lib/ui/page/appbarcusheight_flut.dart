@@ -5,7 +5,7 @@ class AppBarCustomHeight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MainPageAppBar(),
     );
@@ -19,15 +19,15 @@ class MainPageAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(200),
+        preferredSize: const Size.fromHeight(200),
         child: AppBar(
           backgroundColor: Colors.amber,
           flexibleSpace: Positioned(
             bottom: 0,
             right: 0,
             child: Container(
-              margin: EdgeInsets.all(20),
-              child: Text(
+              margin: const EdgeInsets.all(20),
+              child: const Text(
                 'Appbar With Custom Height',
                 style: TextStyle(
                   fontSize: 20,

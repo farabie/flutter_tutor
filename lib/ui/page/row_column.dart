@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class RowColumnTutor extends StatelessWidget {
+  const RowColumnTutor({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Latihan Row dan Column'),
+          title: const Text('Latihan Row dan Column'),
         ),
         body: Column(
           //MainAxisAlignment yang column itu mengatur tataletak kolom secara vertikal
@@ -15,10 +17,10 @@ class RowColumnTutor extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text('Text 1'),
-            Text('Text 2'),
-            Text('Text 3'),
-            Row(
+            const Text('Text 1'),
+            const Text('Text 2'),
+            const Text('Text 3'),
+            const Row(
               //MainAxisAlignment yang column itu mengatur tataletak kolom secara horizontal
               //CrossAxisAlignment mengatur tataletak secara vertikal
               mainAxisAlignment: MainAxisAlignment.center,
@@ -28,7 +30,7 @@ class RowColumnTutor extends StatelessWidget {
                 Text('Text 6'),
               ],
             ),
-            Center(
+            const Center(
               child: Text('Contoh Penerapan Row dan Column'),
             ),
             Row(

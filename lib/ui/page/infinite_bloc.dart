@@ -13,7 +13,7 @@ class InifiniteBloc extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: BlocProvider<PostBloc>(
           create: (context) => PostBloc(PostUnitialized())..add(PostEvent()),
-          child: MainPage()),
+          child: const MainPage()),
     );
   }
 }

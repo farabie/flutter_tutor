@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutor/navigation_tutor/main_page.dart';
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Halaman Login Page'),
+          title: const Text('Halaman Login Page'),
         ),
         body: Center(
           child: ElevatedButton(
@@ -17,10 +19,10 @@ class LoginPage extends StatelessWidget {
               Navigator.pushReplacement(
                   context, //Push replacement gunanya untuk mengganti screen, tapi screen sebelumnya dibuang
                   MaterialPageRoute(builder: (context) {
-                return MainPage();
+                return const MainPage();
               }));
             },
-            child: Text('Login To Main Page'),
+            child: const Text('Login To Main Page'),
           ),
         ),
       ),

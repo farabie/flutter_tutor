@@ -10,7 +10,7 @@ class QrCodeFlut extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Tutorial QR Code FLut'),
+          title: const Text('Tutorial QR Code FLut'),
         ),
         body: Center(
           child: QrImageView(

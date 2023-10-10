@@ -13,6 +13,6 @@ class _WidgetSlidersTransitionFlutState
     extends State<WidgetSlidersTransitionFlut> {
   @override
   Widget build(BuildContext context) {
-    return MainPage();
+    return const MainPage();
   }
 }

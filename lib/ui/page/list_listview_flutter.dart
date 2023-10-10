@@ -28,7 +28,7 @@ class _ListViewFlutState extends State<ListViewFlut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: AppBar(
-            title: Text('List View Tutor'),
+            title: const Text('List View Tutor'),
           ),
           body: ListView(
             children: <Widget>[
@@ -40,8 +40,8 @@ class _ListViewFlutState extends State<ListViewFlut> {
                       setState(() {
                         widgets.add(
                           Text(
-                            'Data Ke ' + counter.toString(),
-                            style: TextStyle(
+                            'Data Ke $counter',
+                            style: const TextStyle(
                               fontSize: 35,
                               fontFamily: "Poppins",
                             ),
@@ -50,7 +50,7 @@ class _ListViewFlutState extends State<ListViewFlut> {
                         counter++;
                       });
                     },
-                    child: Text('Tambah Data'),
+                    child: const Text('Tambah Data'),
                   ),
                   ElevatedButton(
                     onPressed: () {
@@ -59,7 +59,7 @@ class _ListViewFlutState extends State<ListViewFlut> {
                         counter--;
                       });
                     },
-                    child: Text('Kurang Data'),
+                    child: const Text('Kurang Data'),
                   )
                 ],
               ),

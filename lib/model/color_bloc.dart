@@ -9,13 +9,13 @@ class ColorBloc {
   Color _color = Colors.amber;
 
   //Buat untuk menyimpan stream controller Color event
-  StreamController<ColorEvent> _eventController =
+  final StreamController<ColorEvent> _eventController =
       StreamController<ColorEvent>();
   //Buat Sink/Inputan dari color event
   StreamSink<ColorEvent> get eventSink => _eventController.sink;
 
   //Buat untuk menyimpan stream controller Color state
-  StreamController<Color> _stateController = StreamController<Color>();
+  final StreamController<Color> _stateController = StreamController<Color>();
   //Buat Sink/Inputan dari state color
   StreamSink<Color> get _stateSink => _stateController.sink;
   //Buat Stream atau outputnya untuk dialirkan keluar

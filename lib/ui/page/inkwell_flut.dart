@@ -14,7 +14,7 @@ class _InkWellFlutState extends State<InkWellFlut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Tutorial Ink Well'),
+          title: const Text('Tutorial Ink Well'),
         ),
         body: Center(
           child: Column(
@@ -25,7 +25,7 @@ class _InkWellFlutState extends State<InkWellFlut> {
                   backgroundColor: MaterialStateProperty.all(Colors.amber),
                 ),
                 onPressed: () {},
-                child: Text('My Button'),
+                child: const Text('My Button'),
               ),
               Material(
                 //Material diatas container supaya ada bayangan di bawahnya
@@ -36,7 +36,7 @@ class _InkWellFlutState extends State<InkWellFlut> {
                   height: 50,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                       colors: [
                         Colors.purple,
                         Colors.amber,
@@ -54,7 +54,7 @@ class _InkWellFlutState extends State<InkWellFlut> {
                       borderRadius: BorderRadius.circular(20),
                       splashColor: Colors.amber,
                       onTap: () {},
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           'My Button',
                           style: TextStyle(

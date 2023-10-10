@@ -9,12 +9,12 @@ class GradientOpacityFlut extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Tutorial Gradient Opacity'),
+          title: const Text('Tutorial Gradient Opacity'),
         ),
         body: Center(
           child: ShaderMask(
             shaderCallback: (rectangle) {
-              return LinearGradient(
+              return const LinearGradient(
                 //Untuk gunakan shader mask pastikan di linear gradientnya itu harus ada transparent
                 colors: [Colors.pink, Colors.transparent],
                 begin: Alignment.topCenter,
@@ -29,7 +29,7 @@ class GradientOpacityFlut extends StatelessWidget {
               );
             },
             blendMode: BlendMode.dstIn,
-            child: Image(
+            child: const Image(
               width: 300,
               image: NetworkImage(
                   'https://images.wallpapersden.com/image/download/boa-hancock-and-monkey-luffy-art-one-piece-4k_bWdpaWuUmZqaraWkpJRobWllrWdma2U.jpg'),

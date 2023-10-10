@@ -5,12 +5,14 @@ import 'package:flutter_tutor/bloc/blocflut/counterflut_event.dart';
 import 'package:flutter_tutor/bloc/blocflut/counterflut_state.dart';
 
 class MainPage extends StatelessWidget {
+  const MainPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     CounterflutBloc cbloc = BlocProvider.of<CounterflutBloc>(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Bloc V1'),
+        title: const Text('Flutter Bloc V1'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -18,10 +20,10 @@ class MainPage extends StatelessWidget {
           BlocBuilder<CounterflutBloc, CounterflutState>(
             builder: (context, conterState) => Text(
               conterState.value.toString(),
-              style: TextStyle(fontSize: 80, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 80, fontWeight: FontWeight.bold),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           Row(
@@ -32,9 +34,9 @@ class MainPage extends StatelessWidget {
                 onPressed: () {
                   cbloc.add(Decrement());
                 },
-                child: Icon(Icons.arrow_downward),
+                child: const Icon(Icons.arrow_downward),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
               FloatingActionButton(
@@ -42,7 +44,7 @@ class MainPage extends StatelessWidget {
                 onPressed: () {
                   cbloc.add(Increment());
                 },
-                child: Icon(Icons.arrow_upward),
+                child: const Icon(Icons.arrow_upward),
               )
             ],
           )

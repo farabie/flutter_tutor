@@ -7,6 +7,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../model/user.dart';
 
 class MvvmFlut extends StatelessWidget {
+  const MvvmFlut({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,12 +25,14 @@ class MvvmFlut extends StatelessWidget {
 
 class MainPage extends StatelessWidget {
   final Random r = Random();
+
+  MainPage({super.key});
   @override
   Widget build(BuildContext context) {
     UserBloc bloc = BlocProvider.of<UserBloc>(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text('MVVM Demo Arsitektur'),
+        title: const Text('MVVM Demo Arsitektur'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -40,7 +44,7 @@ class MainPage extends StatelessWidget {
             onPressed: () {
               bloc.add(r.nextInt(10) + 1);
             },
-            child: Text(
+            child: const Text(
               'Pick Random User',
               style: TextStyle(color: Colors.white),
             ),

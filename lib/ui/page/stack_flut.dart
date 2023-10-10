@@ -17,7 +17,7 @@ class _StackFlutState extends State<StackFlut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Latihan Stack'),
+          title: const Text('Latihan Stack'),
         ),
         body: Stack(
           children: <Widget>[
@@ -79,14 +79,14 @@ class _StackFlutState extends State<StackFlut> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
                 Align(
-                  alignment: Alignment(0.9, 0.9),
+                  alignment: const Alignment(0.9, 0.9),
                   child: ElevatedButton(
                     onPressed: () {
                       setState(() {
                         widgets.add(
                           Text(
-                            'Ini adalah stack tengah ke ' + counter.toString(),
-                            style: TextStyle(
+                            'Ini adalah stack tengah ke $counter',
+                            style: const TextStyle(
                               fontSize: 30,
                             ),
                           ),
@@ -94,7 +94,7 @@ class _StackFlutState extends State<StackFlut> {
                         counter++;
                       });
                     },
-                    child: Text(
+                    child: const Text(
                       '+',
                       style: TextStyle(
                         fontSize: 32,
@@ -103,7 +103,7 @@ class _StackFlutState extends State<StackFlut> {
                   ),
                 ),
                 Align(
-                  alignment: Alignment(0.9, 0.9),
+                  alignment: const Alignment(0.9, 0.9),
                   child: ElevatedButton(
                     onPressed: () {
                       setState(() {
@@ -111,7 +111,7 @@ class _StackFlutState extends State<StackFlut> {
                         counter--;
                       });
                     },
-                    child: Text(
+                    child: const Text(
                       '-',
                       style: TextStyle(
                         fontSize: 32,

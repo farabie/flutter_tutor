@@ -8,14 +8,14 @@ class TextWidgetFlut extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Belajar Text Widget'),
+          title: const Text('Belajar Text Widget'),
         ),
         body: Center(
           child: Container(
             width: 150,
             height: 100,
             color: Colors.lightBlue,
-            child: Text(
+            child: const Text(
               'Saya sedang melatih kemampuan flutter saya',
               style: TextStyle(
                 color: Colors.white,

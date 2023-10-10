@@ -4,6 +4,8 @@ import 'package:flutter_tutor/bloc/post_bloc.dart';
 import 'package:flutter_tutor/ui/page/infinite_blocflut/post_item.dart';
 
 class MainPage extends StatefulWidget {
+  const MainPage({super.key});
+
   @override
   State<MainPage> createState() => _MainPageState();
 }
@@ -25,23 +27,23 @@ class _MainPageState extends State<MainPage> {
     controller.addListener(onScroll);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Infinite List With Bloc'),
+        title: const Text('Infinite List With Bloc'),
       ),
       body: Container(
-        margin: EdgeInsets.only(
+        margin: const EdgeInsets.only(
           right: 20,
           left: 20,
         ),
         child: BlocBuilder<PostBloc, PostState>(builder: ((context, state) {
-          if (state is PostUnitialized)
-            return Center(
+          if (state is PostUnitialized) {
+            return const Center(
               child: SizedBox(
                 height: 30,
                 width: 30,
                 child: CircularProgressIndicator(),
               ),
             );
-          else {
+          } else {
             PostLoaded postLoaded = state as PostLoaded;
             return ListView.builder(
               controller: controller,
@@ -51,7 +53,7 @@ class _MainPageState extends State<MainPage> {
               itemBuilder: (context, index) => (index < postLoaded.posts.length)
                   ? PostItem(postLoaded.posts[index])
                   : Container(
-                      child: Center(
+                      child: const Center(
                         child: SizedBox(
                           width: 30,
                           height: 30,

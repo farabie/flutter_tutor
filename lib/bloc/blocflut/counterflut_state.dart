@@ -4,5 +4,5 @@ import 'package:meta/meta.dart';
 class CounterflutState {
   final int value;
 
-  CounterflutState(this.value);
+  const CounterflutState(this.value);
 }

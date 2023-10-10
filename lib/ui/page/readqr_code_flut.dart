@@ -16,19 +16,19 @@ class _ReadQrCodeFLutState extends State<ReadQrCodeFLut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Read QR Code Example'),
+          title: const Text('Read QR Code Example'),
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(text),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               ElevatedButton(
                 onPressed: () {},
-                child: Text('Scan'),
+                child: const Text('Scan'),
               )
             ],
           ),

@@ -9,7 +9,7 @@ class ColorfulButton extends StatefulWidget {
   State<ColorfulButton> createState() =>
       _ColorfulButtonState(mainColor, secondColor, iconData);
 
-  ColorfulButton(this.mainColor, this.secondColor, this.iconData);
+  ColorfulButton(this.mainColor, this.secondColor, this.iconData, {super.key});
 }
 
 class _ColorfulButtonState extends State<ColorfulButton> {
@@ -61,7 +61,7 @@ class _ColorfulButtonState extends State<ColorfulButton> {
                   ),
                 ),
                 Transform.translate(
-                  offset: Offset(30, 30),
+                  offset: const Offset(30, 30),
                   child: SizedBox(
                     width: 50,
                     height: 50,
@@ -72,7 +72,7 @@ class _ColorfulButtonState extends State<ColorfulButton> {
                   ),
                 ),
                 Transform.translate(
-                  offset: Offset(-30, 30),
+                  offset: const Offset(-30, 30),
                   child: SizedBox(
                     width: 50,
                     height: 50,
@@ -83,7 +83,7 @@ class _ColorfulButtonState extends State<ColorfulButton> {
                   ),
                 ),
                 Transform.translate(
-                  offset: Offset(-30, -30),
+                  offset: const Offset(-30, -30),
                   child: SizedBox(
                     width: 50,
                     height: 50,
@@ -94,7 +94,7 @@ class _ColorfulButtonState extends State<ColorfulButton> {
                   ),
                 ),
                 Transform.translate(
-                  offset: Offset(30, -30),
+                  offset: const Offset(30, -30),
                   child: SizedBox(
                     width: 50,
                     height: 50,

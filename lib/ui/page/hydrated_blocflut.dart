@@ -12,7 +12,7 @@ class HydratedBlocFlut extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: BlocProvider<ColorLibraryBloc>(
         create: (context) => ColorLibraryBloc(),
-        child: HomePage(),
+        child: const HomePage(),
       ),
     );
   }
@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
             },
             backgroundColor: Colors.amber,
           ),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
           FloatingActionButton(
@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       appBar: AppBar(
-        title: Text('Bloc Dengan Library'),
+        title: const Text('Bloc Dengan Library'),
       ),
       body: Center(
         child: BlocBuilder<ColorLibraryBloc, Color>(
@@ -57,7 +57,7 @@ class HomePage extends StatelessWidget {
             width: 100,
             height: 100,
             color: currentColor,
-            duration: Duration(
+            duration: const Duration(
               milliseconds: 500,
             ),
           ),

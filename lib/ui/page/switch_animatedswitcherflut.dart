@@ -22,19 +22,19 @@ class _SwitchFlutState extends State<SwitchFlut> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Tutorial Switch Animated Swithcer'),
+          title: const Text('Tutorial Switch Animated Swithcer'),
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               AnimatedSwitcher(
-                child: myWidget,
-                duration: Duration(seconds: 1),
+                duration: const Duration(seconds: 1),
                 transitionBuilder: (child, animation) => RotationTransition(
                   turns: animation,
                   child: child,
                 ),
+                child: myWidget,
               ),
               Switch(
                 activeColor: Colors.green,
@@ -46,7 +46,7 @@ class _SwitchFlutState extends State<SwitchFlut> {
                   setState(() {
                     if (isOn) {
                       myWidget = Container(
-                        key: ValueKey(1),
+                        key: const ValueKey(1),
                         width: 200,
                         height: 100,
                         decoration: BoxDecoration(
@@ -70,7 +70,7 @@ class _SwitchFlutState extends State<SwitchFlut> {
                       // );
                     } else {
                       Container(
-                        key: ValueKey(2),
+                        key: const ValueKey(2),
                         width: 200,
                         height: 100,
                         decoration: BoxDecoration(

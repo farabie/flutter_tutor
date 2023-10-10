@@ -10,19 +10,19 @@ class FontFeaturesFlut extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
-        title: Text('Tutorial Font Features,'),
+        title: const Text('Tutorial Font Features,'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Text(
+            const Text(
               'Contoh 01 (Tanpa Apapun)',
               style: TextStyle(
                 fontSize: 20,
               ),
             ),
-            Text(
+            const Text(
               'Contoh 02 (Small Caps)',
               style: TextStyle(
                 fontSize: 20,
@@ -31,7 +31,7 @@ class FontFeaturesFlut extends StatelessWidget {
                 ],
               ),
             ),
-            Text(
+            const Text(
               'Contoh 1/2 (Small Caps & Frac)',
               style: TextStyle(
                 fontSize: 20,
@@ -41,14 +41,14 @@ class FontFeaturesFlut extends StatelessWidget {
                 ],
               ),
             ),
-            Text(
+            const Text(
               'Contoh Cardo 19 (Tanpa Apapun)',
               style: TextStyle(
                 fontSize: 20,
                 fontFamily: "Cardo",
               ),
             ),
-            Text(
+            const Text(
               'Contoh Cardo 19 (Old Style)',
               style: TextStyle(
                 fontSize: 20,
@@ -58,7 +58,7 @@ class FontFeaturesFlut extends StatelessWidget {
                 ],
               ),
             ),
-            Text(
+            const Text(
               'Contoh Gabriola(Default)',
               style: TextStyle(
                 fontSize: 20,
@@ -75,7 +75,7 @@ class FontFeaturesFlut extends StatelessWidget {
                 ],
               ),
             ),
-            Text(
+            const Text(
               'Contoh 3 1/2 (Default)',
               style: TextStyle(
                 fontSize: 20,
@@ -85,7 +85,7 @@ class FontFeaturesFlut extends StatelessWidget {
                 ],
               ),
             ),
-            Text(
+            const Text(
               'Contoh Milonga 3 1/2',
               style: TextStyle(
                 fontSize: 20,

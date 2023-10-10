@@ -9,6 +9,8 @@ class DocFlut extends StatelessWidget {
         'https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2023/04/13/WhatsApp-Image-2023-04-13-at-223756-595896834.jpeg',
   );
 
+  DocFlut({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,7 +18,7 @@ class DocFlut extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.redAccent,
-          title: Text('Document Tutorial'),
+          title: const Text('Document Tutorial'),
         ),
         body: Center(
           child: profile,

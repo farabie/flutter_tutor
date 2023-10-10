@@ -16,7 +16,7 @@ class _GetListApiFlutState extends State<GetListApiFlut> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Latihan Get List API'),
+          title: const Text('Latihan Get List API'),
         ),
         body: Center(
           child: Column(
@@ -27,17 +27,13 @@ class _GetListApiFlutState extends State<GetListApiFlut> {
                 onPressed: () {
                   User.getUsers('2').then((users) {
                     output = "";
-                    for (int i = 0; i < users.length; i++)
-                      output = output +
-                          ' [ ' +
-                          users[i].name +
-                          '|' +
-                          users[i].email +
-                          ' ] ';
+                    for (int i = 0; i < users.length; i++) {
+                      output = '$output [ ${users[i].name}|${users[i].email} ] ';
+                    }
                     setState(() {});
                   });
                 },
-                child: Text('Get List'),
+                child: const Text('Get List'),
               ),
             ],
           ),

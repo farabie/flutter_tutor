@@ -11,7 +11,7 @@ class NavigationMultFlut extends StatefulWidget {
 class _NavigationMultFlutState extends State<NavigationMultFlut> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: LoginPage(),
     );

@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutor/ui/widget/movie_box.dart';
 
 class MainPage extends StatefulWidget {
+  const MainPage({super.key});
+
   @override
   State<MainPage> createState() => _MainPageState();
 }
@@ -35,7 +37,7 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text('Movie Box Demo'),
+          title: const Text('Movie Box Demo'),
         ),
         body: PageView.builder(
             controller: controller,

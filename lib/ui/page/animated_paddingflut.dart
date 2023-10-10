@@ -14,7 +14,7 @@ class _AnimatedPaddingFlutState extends State<AnimatedPaddingFlut> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Tutorial Animated Padding'),
+          title: const Text('Tutorial Animated Padding'),
         ),
         body: Column(
           children: <Widget>[
@@ -25,7 +25,7 @@ class _AnimatedPaddingFlutState extends State<AnimatedPaddingFlut> {
                   Flexible(
                     flex: 1,
                     child: AnimatedPadding(
-                      duration: Duration(seconds: 1),
+                      duration: const Duration(seconds: 1),
                       padding: EdgeInsets.all(myPaddingg),
                       child: Container(
                         color: Colors.red,
@@ -35,7 +35,7 @@ class _AnimatedPaddingFlutState extends State<AnimatedPaddingFlut> {
                   Flexible(
                     flex: 1,
                     child: AnimatedPadding(
-                      duration: Duration(seconds: 1),
+                      duration: const Duration(seconds: 1),
                       padding: EdgeInsets.all(myPaddingg),
                       child: Container(
                         color: Colors.green,
@@ -52,7 +52,7 @@ class _AnimatedPaddingFlutState extends State<AnimatedPaddingFlut> {
                   Flexible(
                     flex: 1,
                     child: AnimatedPadding(
-                      duration: Duration(seconds: 1),
+                      duration: const Duration(seconds: 1),
                       padding: EdgeInsets.all(myPaddingg),
                       child: GestureDetector(
                         onTap: () {
@@ -70,7 +70,7 @@ class _AnimatedPaddingFlutState extends State<AnimatedPaddingFlut> {
                   Flexible(
                     flex: 1,
                     child: AnimatedPadding(
-                      duration: Duration(seconds: 1),
+                      duration: const Duration(seconds: 1),
                       padding: EdgeInsets.all(myPaddingg),
                       child: Container(
                         color: Colors.yellow,

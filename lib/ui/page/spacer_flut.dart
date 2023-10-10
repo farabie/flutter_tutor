@@ -9,12 +9,12 @@ class SpacerFlut extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Tutorial Spacer'),
+          title: const Text('Tutorial Spacer'),
         ),
         body: Center(
           child: Row(
             children: <Widget>[
-              Spacer(
+              const Spacer(
                 flex: 1,
               ),
               Container(
@@ -22,7 +22,7 @@ class SpacerFlut extends StatelessWidget {
                 height: 80,
                 color: Colors.red,
               ),
-              Spacer(
+              const Spacer(
                 flex: 2,
               ),
               Container(
@@ -30,7 +30,7 @@ class SpacerFlut extends StatelessWidget {
                 height: 80,
                 color: Colors.yellow,
               ),
-              Spacer(
+              const Spacer(
                 flex: 3,
               ),
               Container(
@@ -38,7 +38,7 @@ class SpacerFlut extends StatelessWidget {
                 height: 80,
                 color: Colors.blue,
               ),
-              Spacer(
+              const Spacer(
                 flex: 2,
               ),
             ],
