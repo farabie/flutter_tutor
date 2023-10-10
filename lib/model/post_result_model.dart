@@ -14,7 +14,11 @@ class PostResult {
   String id;
   String created;
 
-  PostResult({this.name, this.job, this.id, this.created});
+  PostResult(
+      {required this.name,
+      required this.job,
+      required this.id,
+      required this.created});
 
   //3. Buat Factory untuk menampung mapping dari convert jsonnya
   factory PostResult.createPostResult(Map<String, dynamic> object) {
@@ -28,7 +32,7 @@ class PostResult {
 
   //2. Get Api nya
   static Future<PostResult> connectToApi(String name, String job) async {
-    String apiURL = 'https://reqres.in/api/users';
+    var apiURL = Uri(path: "https://reqres.in/api/users");
 
     ///Connect Api dan menggunakan post untuk mengganti
     var apiResult = await http.post(apiURL, body: {"name": name, "job": job});

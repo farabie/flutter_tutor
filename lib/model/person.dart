@@ -1,9 +1,9 @@
 import 'dart:math';
 
 class Person {
-  String name;
-  int _age;
-  List<int> luckyNumbers;
+  late String name;
+  late int _age;
+  late List<int> luckyNumbers;
 
   int get age => _age;
   set age(int value) {

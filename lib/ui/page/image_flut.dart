@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ImageFlut extends StatefulWidget {
-  const ImageFlut({Key key}) : super(key: key);
+  const ImageFlut({Key? key}) : super(key: key);
 
   @override
   State<ImageFlut> createState() => _ImageFlutState();

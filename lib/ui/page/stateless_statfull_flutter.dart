@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class StaelessFull extends StatefulWidget {
-  const StaelessFull({Key key}) : super(key: key);
+  const StaelessFull({Key? key}) : super(key: key);
 
   @override
   State<StaelessFull> createState() => _StaelessFullState();

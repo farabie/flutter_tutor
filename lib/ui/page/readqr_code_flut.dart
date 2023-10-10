@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 // import 'package:qrscan/qrscan.dart' as scanner;
 
 class ReadQrCodeFLut extends StatefulWidget {
-  const ReadQrCodeFLut({Key key}) : super(key: key);
+  const ReadQrCodeFLut({Key? key}) : super(key: key);
 
   @override
   State<ReadQrCodeFLut> createState() => _ReadQrCodeFLutState();

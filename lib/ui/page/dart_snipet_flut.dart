@@ -26,7 +26,7 @@ class MainPage extends StatelessWidget {
 
 ///Ini merupakan contoh penerapan dari custom dart snippet
 class Person {
-  String _adress;
+  late String _adress;
 
   void setAdress(String value) {
     _adress = value;

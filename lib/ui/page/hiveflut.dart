@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HiveFlut extends StatelessWidget {
-  const HiveFlut({Key key}) : super(key: key);
+  const HiveFlut({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

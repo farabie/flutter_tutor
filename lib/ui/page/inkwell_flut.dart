@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class InkWellFlut extends StatefulWidget {
-  const InkWellFlut({Key key}) : super(key: key);
+  const InkWellFlut({Key? key}) : super(key: key);
 
   @override
   State<InkWellFlut> createState() => _InkWellFlutState();

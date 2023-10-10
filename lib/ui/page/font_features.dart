@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class FontFeaturesFlut extends StatelessWidget {
-  const FontFeaturesFlut({Key key}) : super(key: key);
+  const FontFeaturesFlut({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

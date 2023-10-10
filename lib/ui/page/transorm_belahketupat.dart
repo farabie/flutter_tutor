@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutor/ui/widget/colorful_button.dart';
 
 class TransformFlut extends StatefulWidget {
-  const TransformFlut({Key key}) : super(key: key);
+  const TransformFlut({Key? key}) : super(key: key);
 
   @override
   State<TransformFlut> createState() => _TransformFlutState();

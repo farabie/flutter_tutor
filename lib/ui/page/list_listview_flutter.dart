@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ListViewFlut extends StatefulWidget {
-  const ListViewFlut({Key key}) : super(key: key);
+  const ListViewFlut({Key? key}) : super(key: key);
 
   @override
   State<ListViewFlut> createState() => _ListViewFlutState();

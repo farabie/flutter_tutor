@@ -19,7 +19,7 @@ class _MainPageState extends State<MainPage> {
     super.initState();
     controller.addListener(() {
       setState(() {
-        currentPageValue = controller.page;
+        currentPageValue = controller.page!;
       });
     });
   }

@@ -2,7 +2,7 @@ import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 
 class SwitchDayNight extends StatefulWidget {
-  const SwitchDayNight({Key key}) : super(key: key);
+  const SwitchDayNight({Key? key}) : super(key: key);
 
   @override
   State<SwitchDayNight> createState() => _SwitchDayNightState();

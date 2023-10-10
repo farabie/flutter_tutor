@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutor/model/color_bloc.dart';
 
 class BlocStreamFlut extends StatefulWidget {
-  const BlocStreamFlut({Key key}) : super(key: key);
+  const BlocStreamFlut({Key? key}) : super(key: key);
 
   @override
   State<BlocStreamFlut> createState() => _BlocStreamFlutState();

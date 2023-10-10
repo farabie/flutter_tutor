@@ -3,7 +3,7 @@ import 'package:flutter_tutor/ui/widget/product_card.dart';
 import 'package:provider/provider.dart';
 
 class CustomProductCard extends StatelessWidget {
-  const CustomProductCard({Key key}) : super(key: key);
+  const CustomProductCard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class CustomProductCard extends StatelessWidget {
                     name: "Buah-buahan Mix 1 kg",
                     price: "Rp.25.000",
                     notification:
-                        (productState.quantity > 5) ? "Diskon 10 %" : null,
+                        (productState.quantity > 5) ? "Diskon 10 %" : " ",
                     quantity: productState.quantity,
                     stock: stockState.stock,
                     imageURL:

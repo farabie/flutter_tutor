@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutor/navigation_tutor/login_page.dart';
 
 class NavigationMultFlut extends StatefulWidget {
-  const NavigationMultFlut({Key key}) : super(key: key);
+  const NavigationMultFlut({Key? key}) : super(key: key);
 
   @override
   State<NavigationMultFlut> createState() => _NavigationMultFlutState();

@@ -8,7 +8,13 @@ class User {
   String lastName;
   String avatar;
 
-  User({this.id, this.email, this.firstName, this.lastName, this.avatar});
+  User({
+    this.id = " ",
+    this.email = " ",
+    this.firstName = " ",
+    this.lastName = " ",
+    this.avatar = "",
+  });
 
   factory User.createUser(Map<String, dynamic> object) {
     return User(
@@ -21,7 +27,7 @@ class User {
   }
 
   static Future<User> getUserFromApi(int id) async {
-    String apiURL = "https://reqres.in/api/users/" + id.toString();
+    var apiURL = Uri(path: "https://reqres.in/api/users/$id");
 
     var apiResult = await http.get(apiURL);
     var jsonObject = json.decode(apiResult.body);
@@ -31,4 +37,6 @@ class User {
   }
 }
 
-class UnintializedUser extends User {}
+class UnintializedUser extends User {
+  UnintializedUser({super.id, super.email, super.firstName, super.lastName});
+}

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class OpacityCardCustom extends StatefulWidget {
-  const OpacityCardCustom({Key key}) : super(key: key);
+  const OpacityCardCustom({Key? key}) : super(key: key);
 
   @override
   State<OpacityCardCustom> createState() => _OpacityCardCustomState();
@@ -15,7 +15,7 @@ class _OpacityCardCustomState extends State<OpacityCardCustom> {
 }
 
 class MainPage extends StatelessWidget {
-  const MainPage({Key key}) : super(key: key);
+  const MainPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FlexibleFlut extends StatefulWidget {
-  const FlexibleFlut({Key key}) : super(key: key);
+  const FlexibleFlut({Key? key}) : super(key: key);
 
   @override
   State<FlexibleFlut> createState() => _FlexibleFlutState();

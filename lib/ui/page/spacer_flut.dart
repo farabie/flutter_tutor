@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SpacerFlut extends StatelessWidget {
-  const SpacerFlut({Key key}) : super(key: key);
+  const SpacerFlut({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

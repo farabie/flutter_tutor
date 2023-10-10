@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 class TimerFlut extends StatefulWidget {
-  const TimerFlut({Key key}) : super(key: key);
+  const TimerFlut({Key? key}) : super(key: key);
 
   @override
   State<TimerFlut> createState() => _TimerFlutState();

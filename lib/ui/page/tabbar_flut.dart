@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TabBarFlut extends StatefulWidget {
-  const TabBarFlut({Key key}) : super(key: key);
+  const TabBarFlut({Key? key}) : super(key: key);
 
   @override
   State<TabBarFlut> createState() => _TabBarFlutState();
@@ -18,7 +18,7 @@ class _TabBarFlutState extends State<TabBarFlut> {
 }
 
 class MainPageTab extends StatelessWidget {
-  const MainPageTab({Key key}) : super(key: key);
+  const MainPageTab({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +62,7 @@ class MainPageTab extends StatelessWidget {
 }
 
 class FirstPage extends StatelessWidget {
-  const FirstPage({Key key}) : super(key: key);
+  const FirstPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

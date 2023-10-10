@@ -11,9 +11,9 @@ class ProductCard extends StatelessWidget {
   final int quantity;
   final int stock;
   final String notification;
-  final Function onAddCartTap;
-  final Function onIncTap;
-  final Function onDecTap;
+  final void Function()? onAddCartTap;
+  final void Function()? onIncTap;
+  final void Function()? onDecTap;
 
   final TextStyle textStyle = TextStyle(
       fontFamily: "Poppins",

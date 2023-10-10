@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MobStatexFlut extends StatelessWidget {
-  const MobStatexFlut({Key key}) : super(key: key);
+  const MobStatexFlut({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class MobStatexFlut extends StatelessWidget {
 }
 
 class MainPage extends StatelessWidget {
-  const MainPage({Key key}) : super(key: key);
+  const MainPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

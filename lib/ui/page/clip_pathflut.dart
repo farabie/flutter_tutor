@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ClipPathFlut extends StatelessWidget {
-  const ClipPathFlut({Key key}) : super(key: key);
+  const ClipPathFlut({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

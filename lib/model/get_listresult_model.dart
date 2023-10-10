@@ -6,7 +6,7 @@ class User {
   String name;
   String email;
 
-  User({this.id, this.name, this.email});
+  User({this.id = "", this.name = "", this.email = ""});
 
   factory User.createUser(Map<String, dynamic> object) {
     return User(
@@ -18,7 +18,7 @@ class User {
 
   //Fungsi untuk getlist atau connect api
   static Future<List<User>> getUsers(String page) async {
-    var apiURL = "https://reqres.in/api/users?page=" + page;
+    var apiURL = Uri(path: "https://reqres.in/api/users?page=${page}");
 
     var apiResult = await http.get(apiURL);
     var jsonObject = json.decode(apiResult.body);

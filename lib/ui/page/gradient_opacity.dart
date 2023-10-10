@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class GradientOpacityFlut extends StatelessWidget {
-  const GradientOpacityFlut({Key key}) : super(key: key);
+  const GradientOpacityFlut({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

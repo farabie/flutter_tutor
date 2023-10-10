@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class PositionedFloatingFlut extends StatelessWidget {
-  const PositionedFloatingFlut({Key key}) : super(key: key);
+  const PositionedFloatingFlut({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class LoginPage extends StatelessWidget {
       MediaQuery.of(context).size.width * 2 / 3;
   getBigDiameter(BuildContext context) =>
       MediaQuery.of(context).size.width * 7 / 8;
-  const LoginPage({Key key}) : super(key: key);
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

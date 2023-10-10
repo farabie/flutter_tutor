@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPreferencesDmFLut extends StatefulWidget {
-  const SharedPreferencesDmFLut({Key key}) : super(key: key);
+  const SharedPreferencesDmFLut({Key? key}) : super(key: key);
 
   @override
   State<SharedPreferencesDmFLut> createState() =>

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class StackFlut extends StatefulWidget {
-  const StackFlut({Key key}) : super(key: key);
+  const StackFlut({Key? key}) : super(key: key);
 
   @override
   State<StackFlut> createState() => _StackFlutState();

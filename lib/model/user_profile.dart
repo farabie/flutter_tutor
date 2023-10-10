@@ -23,7 +23,8 @@ class UserProfile extends StatelessWidget {
   ///);
   ///```
 
-  UserProfile({this.name = "No Name", this.role = "No Role", this.photoURL});
+  UserProfile(
+      {this.name = "No Name", this.role = "No Role", required this.photoURL});
 
   @override
   Widget build(BuildContext context) {

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 ///Karena susah cari mp3 nya jadi dilewati
 
 class SoundPlayFlut extends StatefulWidget {
-  const SoundPlayFlut({Key key}) : super(key: key);
+  const SoundPlayFlut({Key? key}) : super(key: key);
 
   @override
   State<SoundPlayFlut> createState() => _SoundPlayFlutState();

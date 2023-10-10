@@ -5,8 +5,6 @@ import 'package:flutter_tutor/bloc/blocflut/counterflut_event.dart';
 import 'package:flutter_tutor/bloc/blocflut/counterflut_state.dart';
 
 class MainPage extends StatelessWidget {
-  const MainPage({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     CounterflutBloc cbloc = BlocProvider.of<CounterflutBloc>(context);

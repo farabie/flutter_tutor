@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutor/model/post_result_model.dart';
 
 class PostHttpFlut extends StatefulWidget {
-  const PostHttpFlut({Key key}) : super(key: key);
+  const PostHttpFlut({Key? key}) : super(key: key);
 
   @override
   State<PostHttpFlut> createState() => _PostHttpFlutState();
 }
 
 class _PostHttpFlutState extends State<PostHttpFlut> {
-  PostResult postResult = null;
+  PostResult? postResult;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,13 +24,13 @@ class _PostHttpFlutState extends State<PostHttpFlut> {
             children: <Widget>[
               Text(
                 (postResult != null)
-                    ? postResult.id +
+                    ? postResult!.id +
                         " | " +
-                        postResult.job +
+                        postResult!.job +
                         " | " +
-                        postResult.name +
+                        postResult!.name +
                         " | " +
-                        postResult.created
+                        postResult!.created
                     : "Tidak ada data",
               ),
               ElevatedButton(

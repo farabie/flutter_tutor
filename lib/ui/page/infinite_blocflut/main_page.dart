@@ -4,15 +4,13 @@ import 'package:flutter_tutor/bloc/post_bloc.dart';
 import 'package:flutter_tutor/ui/page/infinite_blocflut/post_item.dart';
 
 class MainPage extends StatefulWidget {
-  const MainPage({Key key}) : super(key: key);
-
   @override
   State<MainPage> createState() => _MainPageState();
 }
 
 class _MainPageState extends State<MainPage> {
   ScrollController controller = ScrollController();
-  PostBloc bloc;
+  late PostBloc bloc;
 
   void onScroll() {
     double maxScroll = controller.position.maxScrollExtent;

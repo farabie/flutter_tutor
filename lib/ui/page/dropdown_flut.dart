@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DropDownFlut extends StatelessWidget {
-  const DropDownFlut({Key key}) : super(key: key);
+  const DropDownFlut({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  Person selectedPerson;
+  late Person selectedPerson;
 
   List<Person> persons = [
     Person("Cembul"),

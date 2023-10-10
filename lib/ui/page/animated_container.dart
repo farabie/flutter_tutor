@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class AnimatedContainerFlut extends StatefulWidget {
-  const AnimatedContainerFlut({Key key}) : super(key: key);
+  const AnimatedContainerFlut({Key? key}) : super(key: key);
 
   @override
   State<AnimatedContainerFlut> createState() => _AnimatedContainerFlutState();

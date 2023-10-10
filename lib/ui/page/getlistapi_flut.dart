@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutor/model/get_listresult_model.dart';
 
 class GetListApiFlut extends StatefulWidget {
-  const GetListApiFlut({Key key}) : super(key: key);
+  const GetListApiFlut({Key? key}) : super(key: key);
 
   @override
   State<GetListApiFlut> createState() => _GetListApiFlutState();

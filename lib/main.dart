@@ -343,7 +343,7 @@ class MyHomePage extends StatelessWidget {
 
 Row menuBelajar(
     String name, String name2, Widget menuBelajar, Widget menuBelajar2,
-    {BuildContext context}) {
+    {BuildContext? context}) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: [
@@ -354,7 +354,7 @@ Row menuBelajar(
         margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
         child: GestureDetector(
           onTap: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
+            Navigator.push(context!, MaterialPageRoute(builder: (context) {
               return menuBelajar;
             }));
           },
@@ -378,7 +378,7 @@ Row menuBelajar(
         margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
         child: GestureDetector(
           onTap: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
+            Navigator.push(context!, MaterialPageRoute(builder: (context) {
               return menuBelajar2;
             }));
           },

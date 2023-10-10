@@ -29,7 +29,7 @@ class MainPage extends StatelessWidget {
 }
 
 extension NumberExtension<T extends num> on num {
-  T negate() => this * -1;
+  num negate() => this * -1;
 }
 
 extension ListExtension<T> on List {

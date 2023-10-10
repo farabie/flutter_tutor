@@ -5,7 +5,7 @@ class ProgressCustom extends StatelessWidget {
   final int value;
   final int totalValue;
 
-  ProgressCustom({this.width, this.value, this.totalValue});
+  ProgressCustom({this.width = 0, this.value = 0, this.totalValue = 0});
 
   @override
   Widget build(BuildContext context) {

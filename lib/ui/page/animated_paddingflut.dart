@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AnimatedPaddingFlut extends StatefulWidget {
-  const AnimatedPaddingFlut({Key key}) : super(key: key);
+  const AnimatedPaddingFlut({Key? key}) : super(key: key);
 
   @override
   State<AnimatedPaddingFlut> createState() => _AnimatedPaddingFlutState();

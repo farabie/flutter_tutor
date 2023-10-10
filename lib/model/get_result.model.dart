@@ -5,7 +5,7 @@ class User {
   String id;
   String name;
 
-  User({this.id, this.name});
+  User({required this.id, required this.name});
 
   factory User.createUser(Map<String, dynamic> object) {
     return User(
@@ -16,7 +16,7 @@ class User {
 
   //Untuk get itu cuman butuh id saja
   static Future<User> connectToApi(String id) async {
-    String apiUrl = "https://reqres.in/api/users/" + id;
+    var apiUrl = Uri(path: "https://reqres.in/api/users/$id");
 
     var apiResult = await http.get(apiUrl);
     //Ini sudah dapat tapi baru yang ini nya saja {}

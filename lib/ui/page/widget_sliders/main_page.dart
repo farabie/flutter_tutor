@@ -4,8 +4,6 @@ import 'package:flutter_tutor/ui/widget/movie_box.dart';
 import '../../../style/page_styles.dart';
 
 class MainPage extends StatelessWidget {
-  const MainPage({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     PageController controller =

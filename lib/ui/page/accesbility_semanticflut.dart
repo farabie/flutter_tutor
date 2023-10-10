@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class AccesbilitySemantic extends StatelessWidget {
-  const AccesbilitySemantic({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

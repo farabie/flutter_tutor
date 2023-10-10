@@ -4,7 +4,7 @@ import 'package:flutter_tutor/style/custom_style.dart';
 import 'package:flutter_tutor/ui/widget/custom_button.dart';
 
 class DivisionFlut extends StatelessWidget {
-  const DivisionFlut({Key key}) : super(key: key);
+  const DivisionFlut({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class DivisionFlut extends StatelessWidget {
 }
 
 class MainPage extends StatelessWidget {
-  const MainPage({Key key}) : super(key: key);
+  const MainPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -41,8 +41,8 @@ class MainPage extends StatelessWidget {
             ),
             CustomButton(
               CustomStyles.buttonStyle.clone()
-                ..background.color(Colors.green[300])
-                ..border(all: 3, color: Colors.green[300]),
+                ..background.color(Colors.green[300]!)
+                ..border(all: 3, color: Colors.green[300]!),
             ),
           ],
         ),

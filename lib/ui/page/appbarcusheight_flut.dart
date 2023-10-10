@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppBarCustomHeight extends StatelessWidget {
-  const AppBarCustomHeight({Key key}) : super(key: key);
+  const AppBarCustomHeight({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class AppBarCustomHeight extends StatelessWidget {
 }
 
 class MainPageAppBar extends StatelessWidget {
-  const MainPageAppBar({Key key}) : super(key: key);
+  const MainPageAppBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

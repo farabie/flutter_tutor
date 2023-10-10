@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DragableFlut extends StatefulWidget {
-  const DragableFlut({Key key}) : super(key: key);
+  const DragableFlut({Key? key}) : super(key: key);
 
   @override
   State<DragableFlut> createState() => _DragableFlutState();
@@ -10,7 +10,7 @@ class DragableFlut extends StatefulWidget {
 class _DragableFlutState extends State<DragableFlut> {
   Color color1 = Colors.red;
   Color color2 = Colors.yellow;
-  Color targetColor;
+  late Color targetColor;
   bool isAccepted = false;
   @override
   Widget build(BuildContext context) {

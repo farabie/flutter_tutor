@@ -13,9 +13,9 @@ class PostLoaded extends PostState {
   List<Post> posts;
   bool hasReachedMax;
 
-  PostLoaded({this.posts, this.hasReachedMax});
+  PostLoaded({required this.posts, required this.hasReachedMax});
 
-  PostLoaded copyWith({List<Post> posts, bool hasReachedMax}) {
+  PostLoaded copyWith({List<Post>? posts, bool? hasReachedMax}) {
     return PostLoaded(
       //Kalau dia ada posts maka direturn posts parameter jika tidak maka akan direturn sih post yang di constructor
       posts: posts ?? this.posts,

@@ -5,7 +5,7 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ListViewBuilderFlut extends StatelessWidget {
-  const ListViewBuilderFlut({Key key}) : super(key: key);
+  const ListViewBuilderFlut({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

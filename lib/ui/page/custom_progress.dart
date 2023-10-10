@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 import 'dart:async';
 
 class CustomProgress extends StatelessWidget {
-  const CustomProgress({Key key}) : super(key: key);
+  const CustomProgress({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

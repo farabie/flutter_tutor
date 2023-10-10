@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutor/model/get_result.model.dart';
 
 class GetHttpFlut extends StatefulWidget {
-  const GetHttpFlut({Key key}) : super(key: key);
+  const GetHttpFlut({Key? key}) : super(key: key);
 
   @override
   State<GetHttpFlut> createState() => _GetHttpFlutState();
@@ -10,7 +10,7 @@ class GetHttpFlut extends StatefulWidget {
 
 class _GetHttpFlutState extends State<GetHttpFlut> {
   /// Jangan lupa set usernya itu sama dengan null dulu :)
-  User user = null;
+  User? user;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,9 @@ class _GetHttpFlutState extends State<GetHttpFlut> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               Text(
-                (user != null) ? user.id + " | " + user.name : "Tidak ada data",
+                (user != null)
+                    ? user!.id + " | " + user!.name
+                    : "Tidak ada data",
               ),
               ElevatedButton(
                 onPressed: () {

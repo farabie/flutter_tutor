@@ -4,7 +4,7 @@ import 'package:flutter_tutor/model/money.dart';
 import 'package:provider/provider.dart';
 
 class ProviderMultiFLut extends StatelessWidget {
-  const ProviderMultiFLut({Key key}) : super(key: key);
+  const ProviderMultiFLut({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

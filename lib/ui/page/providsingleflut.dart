@@ -3,7 +3,7 @@ import 'package:flutter_tutor/ui/widget/aplication_color.dart';
 import 'package:provider/provider.dart';
 
 class ProviderSingleFlut extends StatelessWidget {
-  const ProviderSingleFlut({Key key}) : super(key: key);
+  const ProviderSingleFlut({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

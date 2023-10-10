@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TextWidgetDecFlut extends StatefulWidget {
-  const TextWidgetDecFlut({Key key}) : super(key: key);
+  const TextWidgetDecFlut({Key? key}) : super(key: key);
 
   @override
   State<TextWidgetDecFlut> createState() => _TextWidgetDecFlutState();

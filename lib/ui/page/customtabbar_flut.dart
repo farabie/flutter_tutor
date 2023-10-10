@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomTabBarFlut extends StatelessWidget {
-  const CustomTabBarFlut({Key key}) : super(key: key);
+  const CustomTabBarFlut({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

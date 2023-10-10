@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HeroClipFlut extends StatelessWidget {
-  const HeroClipFlut({Key key}) : super(key: key);
+  const HeroClipFlut({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class HeroClipFlut extends StatelessWidget {
 }
 
 class MainHeroPage extends StatelessWidget {
-  const MainHeroPage({Key key}) : super(key: key);
+  const MainHeroPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,7 @@ class MainHeroPage extends StatelessWidget {
 ///Kalau hero salah satu tagnya tidak ada maka akan error assertion
 ///Tapi kalau salah satu saja tagnya maka hero animation tidak berjalan
 class SecondHeroPage extends StatelessWidget {
-  const SecondHeroPage({Key key}) : super(key: key);
+  const SecondHeroPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

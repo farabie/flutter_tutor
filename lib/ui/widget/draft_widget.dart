@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class DraftWidget extends StatelessWidget {
-  Color backgroundColor;
-  Widget body;
+  Color? backgroundColor;
+  Widget? body;
 
   DraftWidget({this.backgroundColor, this.body});
 

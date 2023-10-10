@@ -44,6 +44,7 @@ class SecondPage extends StatelessWidget {
                           : CircleBorder(),
                       backgroundColor: Colors.pink,
                     ),
+                    child: null,
                   ),
                   ElevatedButton(
                     onPressed: () {
@@ -59,6 +60,7 @@ class SecondPage extends StatelessWidget {
                           : CircleBorder(),
                       backgroundColor: Colors.amber,
                     ),
+                    child: null,
                   ),
                   ElevatedButton(
                     onPressed: () {
@@ -75,6 +77,7 @@ class SecondPage extends StatelessWidget {
                           : CircleBorder(),
                       backgroundColor: Colors.purple,
                     ),
+                    child: null,
                   ),
                 ],
               )
