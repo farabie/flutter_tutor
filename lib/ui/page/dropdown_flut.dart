@@ -28,6 +28,12 @@ class _MainPageState extends State<MainPage> {
     Person("Cimeng"),
   ];
 
+  @override
+  void initState() {
+    super.initState();
+    selectedPerson = persons.first;
+  }
+
   List<DropdownMenuItem> generateItems(List<Person> persons) {
     List<DropdownMenuItem> items = [];
     for (var item in persons) {

@@ -27,7 +27,8 @@ class User {
   }
 
   static Future<User> getUserFromApi(int id) async {
-    var apiURL = Uri(path: "https://reqres.in/api/users/$id");
+    var baseUrl = "https://reqres.in/api/users/$id";
+    var apiURL = Uri.parse(baseUrl);
 
     var apiResult = await http.get(apiURL);
     var jsonObject = json.decode(apiResult.body);

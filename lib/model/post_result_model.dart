@@ -32,7 +32,8 @@ class PostResult {
 
   //2. Get Api nya
   static Future<PostResult> connectToApi(String name, String job) async {
-    var apiURL = Uri(path: "https://reqres.in/api/users");
+    var baseUrl = "https://reqres.in/api/users";
+    var apiURL = Uri.parse(baseUrl);
 
     ///Connect Api dan menggunakan post untuk mengganti
     var apiResult = await http.post(apiURL, body: {"name": name, "job": job});

@@ -11,10 +11,9 @@ class Post {
   }
 
   static Future<List<Post>> connectToApi(int start, int limit) async {
-    var apiURL = Uri(
-      path:
-          "https://jsonplaceholder.typicode.com/posts?_start=$start&_limit=$limit",
-    );
+    var baseUrl =
+        "https://jsonplaceholder.typicode.com/posts?_start=$start&_limit=$limit";
+    var apiURL = Uri.parse(baseUrl);
     var apiResult = await http.get(apiURL);
     var jsonObject = json.decode(apiResult.body) as List;
 

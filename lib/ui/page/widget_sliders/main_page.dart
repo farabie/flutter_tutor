@@ -24,8 +24,12 @@ class MainPage extends StatelessWidget {
             itemCount: listMovie.length,
             itemBuilder: ((context, index) {
               return Center(
-                child: MovieBox(listMovie[index]),
+                child: Text("Lagi Error nih division"),
               );
             })));
   }
 }
+
+//  return Center(
+//                 child: MovieBox(listMovie[index]),
+//               );

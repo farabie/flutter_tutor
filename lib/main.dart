@@ -307,7 +307,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '61. Division(Styling Widget Inspired by CSS)',
             '62. Widget Slider Using Page View',
-            const DivisionFlut(),
+            const WidgetSlidersFlut(),
             const WidgetSlidersFlut(),
             context: context,
           ),

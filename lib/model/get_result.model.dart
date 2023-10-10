@@ -16,7 +16,8 @@ class User {
 
   //Untuk get itu cuman butuh id saja
   static Future<User> connectToApi(String id) async {
-    var apiUrl = Uri(path: "https://reqres.in/api/users/$id");
+    var baseUrl = "https://reqres.in/api/users/$id";
+    var apiUrl = Uri.parse(baseUrl);
 
     var apiResult = await http.get(apiUrl);
     //Ini sudah dapat tapi baru yang ini nya saja {}

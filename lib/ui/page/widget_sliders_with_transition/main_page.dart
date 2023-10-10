@@ -49,11 +49,14 @@ class _MainPageState extends State<MainPage> {
               }
               difference = min(1, difference);
               return Center(
-                child: MovieBox(
-                  listMovie[index],
-                  scale: 1 - (difference * 0.3),
-                ),
+                child: Text("Lagi Error nih Division"),
               );
             })));
   }
 }
+
+//  return Center(
+//                 child: MovieBox(
+//                   listMovie[index],
+//                   scale: 1 - (difference * 0.3),
+//                 ),

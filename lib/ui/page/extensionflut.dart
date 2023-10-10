@@ -11,7 +11,7 @@ class ExtensionFlut extends StatelessWidget {
           appBar: AppBar(
             title: const Text('Extension Demo'),
           ),
-          body: const MainPage()),
+          body: MainPage()),
     );
   }
 }
@@ -20,7 +20,7 @@ class MainPage extends StatelessWidget {
   final int number = 5;
   final List myList = [1, 2, 5, 7];
 
-  const MainPage({super.key});
+  MainPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -37,8 +37,7 @@ extension NumberExtension<T extends num> on num {
 }
 
 extension ListExtension<T> on List {
-  T get middleElement =>
-      (isEmpty) ? null : this[(length / 2).floor()];
+  T get middleElement => (isEmpty) ? null : this[(length / 2).floor()];
 }
 
 extension StringExtension on String {
