@@ -19,6 +19,7 @@ import 'package:flutter_tutor/ui/page/division_flut.dart';
 import 'package:flutter_tutor/ui/page/doc_flut.dart';
 import 'package:flutter_tutor/ui/page/dragable_flut.dart';
 import 'package:flutter_tutor/ui/page/dropdown_flut.dart';
+import 'package:flutter_tutor/ui/page/equatableflut.dart';
 import 'package:flutter_tutor/ui/page/extensionflut.dart';
 import 'package:flutter_tutor/ui/page/first_flutter.dart';
 import 'package:flutter_tutor/ui/page/flexible_widget.dart';
@@ -330,7 +331,7 @@ class MyHomePage extends StatelessWidget {
             '67. Membuat Class Tiruan dengan MockKito',
             '68. Equatable',
             const MockKitoFlut(),
-            const MobStatexFlut(),
+            const EquatableFlut(),
             context: context,
           ),
           menuBelajar(
