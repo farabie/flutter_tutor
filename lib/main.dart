@@ -53,6 +53,7 @@ import 'package:flutter_tutor/ui/page/rive_flut.dart';
 import 'package:flutter_tutor/ui/page/row_column.dart';
 import 'package:flutter_tutor/ui/page/select_toogle_flut.dart';
 import 'package:flutter_tutor/ui/page/sharedprefrence_dmflut.dart';
+import 'package:flutter_tutor/ui/page/simulasi_httpflut.dart';
 import 'package:flutter_tutor/ui/page/sound_play.dart';
 import 'package:flutter_tutor/ui/page/spacer_flut.dart';
 import 'package:flutter_tutor/ui/page/stack_flut.dart';
@@ -337,7 +338,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '69. Simulasi HTTP Request dengan Mockito',
             '70. Bloc Test Bagian 1',
-            const ExtensionFlut(),
+            const SimulasiHtttpFlut(),
             const MobStatexFlut(),
             context: context,
           ),
