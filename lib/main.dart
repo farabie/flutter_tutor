@@ -27,6 +27,7 @@ import 'package:flutter_tutor/ui/page/flutterblocflut1.dart';
 import 'package:flutter_tutor/ui/page/font_features.dart';
 import 'package:flutter_tutor/ui/page/getapimethod_flut.dart';
 import 'package:flutter_tutor/ui/page/getlistapi_flut.dart';
+import 'package:flutter_tutor/ui/page/google_fontsflut.dart';
 import 'package:flutter_tutor/ui/page/gradient_opacity.dart';
 import 'package:flutter_tutor/ui/page/hero_cliprect.dart';
 import 'package:flutter_tutor/ui/page/hiveflut.dart';
@@ -346,7 +347,7 @@ class MyHomePage extends StatelessWidget {
             '71. Bloc Test Bagian 2',
             '72. Google Fonts',
             const SimulasiHtttpFlut(),
-            const MobStatexFlut(),
+            const GoogleFontsFlut(),
             context: context,
           ),
           menuBelajar(

@@ -48,6 +48,7 @@ dependencies:
   flare_flutter: ^3.0.0
   equatable: ^2.0.5
   bloc_test: ^8.0.1
+  google_fonts: ^4.0.0
   # audioplayers: ^1.0.0
   # qrscan: ^0.3.3
 
@@ -75,13 +76,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/luffy.jpg
-    - images/pattern.jpg
-    - images/pattern1.png
-    - images/bg_sunset.jpg
-    - images/facebook.png
-    - images/twitter.png
-    - assets/switch_daytime.flr
+    - images/
+    - assets/
+    - google_fonts/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
