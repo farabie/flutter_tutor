@@ -21,6 +21,7 @@ import 'package:flutter_tutor/ui/page/dragable_flut.dart';
 import 'package:flutter_tutor/ui/page/dropdown_flut.dart';
 import 'package:flutter_tutor/ui/page/equatableflut.dart';
 import 'package:flutter_tutor/ui/page/extensionflut.dart';
+import 'package:flutter_tutor/ui/page/firebase_authanonymous.dart';
 import 'package:flutter_tutor/ui/page/first_flutter.dart';
 import 'package:flutter_tutor/ui/page/flexible_widget.dart';
 import 'package:flutter_tutor/ui/page/flutterblocflut1.dart';
@@ -353,7 +354,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '73. Firebase Authentication(Anonymous Account)',
             '74. Firebase Authentication (Email & Password)',
-            const SimulasiHtttpFlut(),
+            const FirebaseAnonymous(),
             const MobStatexFlut(),
             context: context,
           ),
