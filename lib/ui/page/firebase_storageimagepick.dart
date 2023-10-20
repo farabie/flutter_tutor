@@ -18,7 +18,7 @@ class FirebaseStorageImagePicker extends StatelessWidget {
                 "Dibedakan repository karena untuk firebas harus inisialisasi dulu di widget binddingnya",
               ),
               Text(
-                  "Untuk Materi ini cek repository dengan nama firebase_storageimage"),
+                  "Untuk Materi ini cek repository dengan nama firebase_anonymousflut"),
             ],
           ),
         ),

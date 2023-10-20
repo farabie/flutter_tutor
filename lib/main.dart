@@ -22,6 +22,9 @@ import 'package:flutter_tutor/ui/page/dropdown_flut.dart';
 import 'package:flutter_tutor/ui/page/equatableflut.dart';
 import 'package:flutter_tutor/ui/page/extensionflut.dart';
 import 'package:flutter_tutor/ui/page/firebase_authanonymous.dart';
+import 'package:flutter_tutor/ui/page/firebase_authemailpass.dart';
+import 'package:flutter_tutor/ui/page/firebase_cloudfirestore.dart';
+import 'package:flutter_tutor/ui/page/firebase_storageimagepick.dart';
 import 'package:flutter_tutor/ui/page/first_flutter.dart';
 import 'package:flutter_tutor/ui/page/flexible_widget.dart';
 import 'package:flutter_tutor/ui/page/flutterblocflut1.dart';
@@ -355,14 +358,14 @@ class MyHomePage extends StatelessWidget {
             '73. Firebase Authentication(Anonymous Account)',
             '74. Firebase Authentication (Email & Password)',
             const FirebaseAnonymous(),
-            const MobStatexFlut(),
+            const FirebaseAuthEmail(),
             context: context,
           ),
           menuBelajar(
             '75. Cloud Firestore',
             '76. Firebase Storage & Image Picker',
-            const SimulasiHtttpFlut(),
-            const MobStatexFlut(),
+            const FirebaseCloudFirestore(),
+            const FirebaseStorageImagePicker(),
             context: context,
           ),
           menuBelajar(
