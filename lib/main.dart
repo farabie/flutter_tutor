@@ -58,6 +58,7 @@ import 'package:flutter_tutor/ui/page/rive_flut.dart';
 import 'package:flutter_tutor/ui/page/row_column.dart';
 import 'package:flutter_tutor/ui/page/select_toogle_flut.dart';
 import 'package:flutter_tutor/ui/page/sharedprefrence_dmflut.dart';
+import 'package:flutter_tutor/ui/page/shimmer_flut.dart';
 import 'package:flutter_tutor/ui/page/simulasi_httpflut.dart';
 import 'package:flutter_tutor/ui/page/sound_play.dart';
 import 'package:flutter_tutor/ui/page/spacer_flut.dart';
@@ -371,7 +372,7 @@ class MyHomePage extends StatelessWidget {
           menuBelajar(
             '77. Shimmer Effect',
             '78. One Signal Notification',
-            const SimulasiHtttpFlut(),
+            const ShimmerFlut(),
             const MobStatexFlut(),
             context: context,
           ),
